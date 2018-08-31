@@ -19,6 +19,6 @@ function check(){
 - 잘되는걸까요?
 
 - 얼른 확인해보고싶다.
-  - 오오
-  - 좋다.![dlanor-s-703975-unsplash (1)](C:\Users\ParkJunWoo\Desktop\dlanor-s-703975-unsplash (1).jpg)
-  - 
+
+
+  ![dlanor-s-703975-unsplash (1)](C:\Users\ParkJunWoo\Documents\Codestates\TIL\TIL\pic\dlanor-s-703975-unsplash (1).jpg)
