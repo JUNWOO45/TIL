@@ -1,3 +1,7 @@
+---
+typora-copy-images-to: pic
+---
+
 function check(){
 
 	if(chicken === god){
@@ -27,5 +31,5 @@ function check(){
 
 내 컴퓨터의 사진이 안올라간당.
 
-![roland-denes-800152-unsplash](C:\Users\ParkJunWoo\Desktop\roland-denes-800152-unsplash.jpg)
+![roland-denes-800152-unsplash](C:\Users\ParkJunWoo\Documents\Codestates\TIL\TIL\pic\roland-denes-800152-unsplash.jpg)
 
