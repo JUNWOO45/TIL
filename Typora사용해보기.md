@@ -1,7 +1,3 @@
----
-typora-copy-images-to: pic
----
-
 function check(){
 
 	if(chicken === god){
@@ -25,10 +21,11 @@ function check(){
 
 ![이미지연습3](https://images.unsplash.com/photo-1535665354111-287c38606b60?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f50de25037439abe3e44552a4b7ad3bc&auto=format&fit=crop&w=500&q=60)
 
+인터넷에서 링크로 사진 업로드하는 것은 성공.
 
 
 
+내 컴퓨터의 사진이 안올라간당.
 
-이미지왜안올라가!
+![roland-denes-800152-unsplash](C:\Users\ParkJunWoo\Desktop\roland-denes-800152-unsplash.jpg)
 
-![roland-denes-800152-unsplash](C:\Users\ParkJunWoo\Documents\Codestates\TIL\TIL\pic\roland-denes-800152-unsplash-1535871450081.jpg)
