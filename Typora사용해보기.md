@@ -31,5 +31,5 @@ function check(){
 
 내 컴퓨터의 사진이 안올라간당.
 
-![roland-denes-800152-unsplash](C:\Users\ParkJunWoo\Documents\Codestates\TIL\TIL\pic\roland-denes-800152-unsplash.jpg)
+![ㅇ오~~ 인터뷰할때 함 보자](C:\Users\ParkJunWoo\Documents\Codestates\TIL\TIL\pic\ㅇ오 인터뷰할때 함 보자.png)
 
