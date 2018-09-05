@@ -33,3 +33,8 @@ function check(){
 
 ![ㅇ오~~ 인터뷰할때 함 보자](C:\Users\ParkJunWoo\Documents\Codestates\TIL\TIL\pic\ㅇ오 인터뷰할때 함 보자.png)
 
+
+
+-> 해결! 해결방법
+
+이미지를 레파지토리에 커밋한 후 상대경로를 링크로 걸어서 해결..(재완님께 감사를..)
