@@ -1,8 +1,4 @@
-![재완님의 깃에서 가져온 자료입니다. 넘나 멋진 자료에요..](https://github.com/lastrites2018/TIL/blob/master/GIT.md)
-
-
-
-## GIT COMMIT 메세지 잘 작성하기
+## GIT COMMIT 메세지 잘 작성하기(<a href="https://github.com/lastrites2018/TIL">[lastrites2018](https://github.com/lastrites2018)님</a>의 자료입니다.)
 
 [훌륭한 링크](https://item4.github.io/2016-11-01/How-to-Write-a-Git-Commit-Message/)
 
