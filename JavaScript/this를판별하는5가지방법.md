@@ -36,14 +36,6 @@ this를 파악하기위한 5가지 공식을 준비해봤습니다.
 
 1.암시적바인딩
 
-이름이 어려워보이죠? 암시적바인딩..
-
-영어로는 Implicit Binding이라고 합니다.
-
-근데 사실 this를 파악하기위해서는 이런 이름은 별로 중요하지않아요!
-
-
-
 첫번째 공식은, 함수가 실행될 때, " . "앞의 녀석이 this가 된다는 것입니다.
 
 ```
@@ -98,7 +90,7 @@ person.mother.greet();
 
 함수가 실행될때, " . " 앞에 있는 녀석이 this라고 했습니다.
 
-이 경우에도 똑같이 적용하면 됩니다!
+이 경우에도 똑같이 적용하면 됩니다.
 
 ```
 person.greet();	// "hello! my name is junwoo"
@@ -109,13 +101,7 @@ person.mother.greet();	//"hello! my name is jin"
 
 2.명시적바인딩(call, apply, bind)
 
-
-
 this와 더불어 자바스크립트를 공부하는 우리들을 괴롭히는 call, apply, bind입니다.
-
-this에대한 글이므로 call, apply, bind에대한 설명은 생략하겠습니다.
-
-
 
 두번째 공식입니다.
 
@@ -138,15 +124,7 @@ greet.call(user)은 call 뒤의 괄호 안에 user가 this 겠죠?
 
 
 
-
-
 3. new 바인딩
-
-new 바인딩이라니.. 이름부터 어려워보입니다.
-
-하지만 전혀 두려워하실 필요없어요..!
-
-
 
 new는 뒤에 함수이름이 따라온답니다.
 
@@ -159,17 +137,15 @@ function Person(name, age) {
 const me = new Person("junwoo", 100);
 ```
 
-이런식으로 new 뒤에는 Person이라는 함수가 오게되죠!
+이런식으로 new 뒤에는 Person이라는 함수가 오게됩니다.
 
-
-
-세번째 공식입니다!
+세번째 공식입니다.
 
 new 바인딩은 this가 빈 객체를 가리킵니다. 
 
 
 
-이해가 잘 안가시죠? 천천히 설명해보겠습니다.
+천천히 설명해보겠습니다.
 
 ```
 let obj = {};
@@ -187,7 +163,7 @@ obj를 출력하면 {name : "junwoo"}가 출력됩니다.
 
 
 
-이러한 방법과 똑같습니다!
+이러한 방법과 똑같습니다.
 
 ```
 function Person(name, age) {
@@ -231,9 +207,7 @@ console.log(me)를 해보시면
 
 4. 윈도우 바인딩
 
-
-
-네번째 공식입니다!
+네번째 공식입니다.
 
 함수로 실행되었을때, this는 window입니다.
 
@@ -260,7 +234,7 @@ person();	//"hello! my name is undefined"
 
 또한 call, apply, bind도 사용하지 않고있구요. 
 
-new도 사용하지 않고있습니다!
+new도 사용하지 않고있습니다.
 
 ```
 window.name = "bada";
@@ -278,7 +252,7 @@ person();	// "hello! my name is bada"
 
 마지막 다섯번째 공식입니다.
 
-strict모드에서 this는 undefined입니다!
+strict모드에서 this는 undefined입니다.
 
 ```
 'use strict'
@@ -294,7 +268,7 @@ person();	// Uncaught TypeError: Cannot read property 'name' of undefined
 
 4번 예시와 똑같지만 다른점 하나는 'use strict'를 사용해서 엄격모드를 실행했다는 점입니다.
 
-strict모드를 사용한다면 this는 undefined입니다!
+strict모드를 사용한다면 this는 undefined입니다.
 
 
 
