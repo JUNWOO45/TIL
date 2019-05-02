@@ -1,6 +1,5 @@
 
 [![HitCount](http://hits.dwyl.io/junwoo45/TIL.svg)](http://hits.dwyl.io/junwoo45/TIL)
-<img src="https://hitcounter.pythonanywhere.com/count/tag.svg" alt="Hits">
 
 <hr>
 <h1>Today I Learned!</h1>
