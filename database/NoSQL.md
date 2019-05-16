@@ -125,3 +125,120 @@
     ```
 
     
+
+<hr>
+
+처음 데이터를 뽑을때 겪은 시행착오의.. 의식의 흐름의.. 과정..
+
+
+
+1.원하는 데이터의 목록을 가져옵니다.
+
+```
+select name,university,major,year,attendance_status,mobile,area_gu,admin_memo,self_introduction,account_sid from teacher;
+```
+
+
+
+2.뭔가 구려보입니다. 문법을 왜 대문자로쓰는지 조금 느꼈습니다.
+
+특정 조건으로 데이터를 뽑기위한 방법은 이미 알고있습니다.
+
+```
+SELECT name,university,major,year,attendance_status,mobile,area_gu,admin_memo,self_introduction,schedule.`updated_at` FROM teacher LEFT JOIN schedule ON teacher.account_sid = schedule.account_sid WHERE (major="소비자아동학부" OR major="아동학전공" OR major="소비자아동학과" OR major="아동학과" OR major="아동학부" OR major="아동 청소년학과" OR major="아동심리학과" OR major="아동학과(인문사회)" OR major="소비자아동학부(소비자학전공)"  OR major="소비자아동학부(아동가족학전공)" OR major="아동청소년학부" OR major="심리 아동학부" OR major="아동학부 아동학전공" OR major="아동가족 사회복지학부" OR major="아동 보육전공"  OR major="아동보육전공" OR major="아동보육복지전공" OR major="아동미술교육과" OR major="아동미술보육과" OR major="아동보육과" OR major="아동보육복지과" OR major="보육복지과" OR major="아동복지보육과" OR major="보육과" OR major="영유아보육과" OR major="유아보육과" OR major="유아특수보육과" OR major="유아교육학과" OR major="아동보육학과" OR major="영유아보육복지과" OR major="아동미술과" OR major="영유아보육학과" OR major="아동미술보육과" OR major="아동보육복지학과" OR major="유아보육계열" OR major="유아특수보육과" OR major="어린이영어보육과" OR major="아동교육상담학과" OR major="아동보육학과" OR major="보육학과" OR major="영유아보육학과" OR major="영유아보육학전공" OR major="불교아동보육학과" OR major="아동보육교육학부" OR major="유아특수재활과" OR major="장애유아보육과" OR major="장애유아보육학과") AND (year=3 OR year=4);
+```
+
+
+
+3.읽기 너무 어렵습니다...
+
+조금 바꿔봅니다..
+
+3-1.AS를 활용해보려합니다.
+
+3-2.줄바꿈을 사용합니다.
+
+```
+SELECT name,university,major,year,attendance_status,mobile,area_gu,admin_memo,self_introduction,s.`updated_at`
+FROM teacher AS t
+LEFT JOIN schedule AS s
+   ON t.account_sid = s.account_sid
+WHERE (major="소비자아동학부" OR major="아동학전공" OR major="소비자아동학과" OR major="아동학과" OR major="아동학부" OR major="아동 청소년학과" OR major="아동심리학과" OR major="아동학과(인문사회)" OR major="소비자아동학부(소비자학전공)"  OR major="소비자아동학부(아동가족학전공)" OR major="아동청소년학부" OR major="심리 아동학부" OR major="아동학부 아동학전공" OR major="아동가족 사회복지학부" OR major="아동 보육전공"  OR major="아동보육전공" OR major="아동보육복지전공" OR major="아동미술교육과" OR major="아동미술보육과" OR major="아동보육과" OR major="아동보육복지과" OR major="보육복지과" OR major="아동복지보육과" OR major="보육과" OR major="영유아보육과" OR major="유아보육과" OR major="유아특수보육과" OR major="유아교육학과" OR major="아동보육학과" OR major="영유아보육복지과" OR major="아동미술과" OR major="영유아보육학과" OR major="아동미술보육과" OR major="아동보육복지학과" OR major="유아보육계열" OR major="유아특수보육과" OR major="어린이영어보육과" OR major="아동교육상담학과" OR major="아동보육학과" OR major="보육학과" OR major="영유아보육학과" OR major="영유아보육학전공" OR major="불교아동보육학과" OR major="아동보육교육학부" OR major="유아특수재활과" OR major="장애유아보육과" OR major="장애유아보육학과") AND (t.year=3 OR t.year=4 OR t.attendance_status=3);
+```
+
+
+
+4.IN을 사용해서 코드를 많이 줄여봅니다!!
+
+```
+SELECT name,university,major,year,attendance_status,mobile,area_gu,admin_memo,self_introduction,s.`updated_at`
+FROM teacher AS t
+LEFT JOIN schedule AS s
+   ON t.account_sid = s.account_sid
+WHERE major IN("소비자아동학부","아동학전공","소비자아동학과","아동학과","아동학부","아동 청소년학과","아동학과(인문사회)","아동심리학과","소비자아동학부","아동청소년학부","심리 아동학부","아동학부 아동학전공","아동가족 사회복지학부","아동 보육전공","아동보육전공","아동보육복지전공","아동미술교육과","아동미술보육과","아동보육과" ,"아동보육복지과","보육복지과","아동복지보육과","보육과","영유아보육과","유아보육과","유아특수보육과","유아교육학과","아동보육학과","영유아보육복지과","아동미술과","영유아보육학과","아동미술보육과","아동보육복지학과","유아보육계열","유아특수보육과","어린이영어보육과" ,"아동교육상담학과","아동보육학과","보육학과","영유아보육학과","영유아보육학전공","불교아동보육학과","아동보육교육학부","유아특수재활과","장애유아보육과","장애유아보육학과") AND (t.year=3 OR t.year=4 OR t.attendance_status=3);
+```
+
+훨씬 짧아졌군요..
+
+
+
+5.
+
+너무 긴 string데이터를 2단어만 보여주도록 바꿉니다.
+
+게다가 IN을 써도 저건 뭔가 너무 많습니다...
+
+5-1.SUBSTRING_INDEX를 사용
+
+5-2.LIKE를 사용
+
+```
+SELECT name,university,major,year,attendance_status,mobile,SUBSTRING_INDEX(address,' ', 2),admin_memo,self_introduction,s.`updated_at`
+FROM teacher AS t
+LEFT JOIN schedule AS s
+   ON t.account_sid = s.account_sid
+WHERE (major LIKE '%아동%' OR major LIKE '%보육%' OR major LIKE '%유아%') AND (t.year=3 OR t.year=4 OR t.attendance_status=3);
+```
+
+단어를 다 나열하기보다는, 중복되는 특정단어를 포함한 데이터를 불러오는 식으로 수정했습니다.
+
+코드도 훨씬 짧아지고, 검색되는 데이터의 양도 폭발적으로 늘어났습니다...!!
+
+
+
+6.왜 선조들은 인덴팅을 만들었는가..를 느낍니다.
+
+6-1. 인덴팅 추가
+
+6-2 AS로 title column수정
+
+6-3.WHEN THEN구문을 사용해서 데이터를 읽을 사람에게 편의제공.
+
+```
+SELECT 
+	name AS 이름,
+	university AS 학교,
+	major AS 학과,
+	year AS 학년,
+	CASE
+		WHEN t.attendance_status = 1 THEN '재학'
+		WHEN t.attendance_status = 2 THEN '휴학'
+		WHEN t.attendance_status = 3 THEN '졸업'
+	END AS 졸업여부,
+	mobile AS 휴대폰,
+	SUBSTRING_INDEX(address,' ', 2) AS 주소,
+	admin_memo AS 관리자메모,
+	self_introduction AS 자기소개,
+	s.`updated_at` AS 최근스케쥴업데이트
+FROM teacher AS t
+LEFT JOIN schedule AS s
+   ON t.account_sid = s.account_sid
+WHERE 
+	(major LIKE '%아동%' OR major LIKE '%보육%' OR major LIKE '%유아%') 
+	AND 
+	(t.year=3 OR t.year=4 OR t.attendance_status=3);
+```
+
+
+
+훨씬 좋아진듯합니다..
