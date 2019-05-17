@@ -225,6 +225,117 @@ WHERE job IN ('manager', 'developer') AND age IN(20,30);
 
 
 
+```
+SELECT name, job, age
+FROM friends
+WHERE name LIKE '박%';
+```
+
+```
+이름이 박으로 시작하는 친구 추출
+```
+
+```
+% : 0개 이상의 어떠한 글자.
+_ : 1개인 단일 문자
+```
+
+```
+예를 들어, 
+WHERE name LIKE '_a%';
+라면 첫번째의 어떤 단일문자가 있고, 두번째 글자가 a로시작하는 이름의 사람 추출.
+```
+
+
+
+```
+SELECT name, job, age, height
+FROM friends
+WHERE height BETWEEN 170 AND 180;
+```
+
+```
+친구들 중에서 키가 170이상, 180이하인 선수 추출
+```
+
+
+
+```
+SELECT name, job, age
+FROM friends
+WHERE job IS NULL;
+```
+
+```
+직업이 입력되지 않은 친구 추출.
+```
+
+
+
+```
+SELECT name, job, age, height
+FROM friends
+WHERE age = 30 AND height >= 175;
+```
+
+```
+나이가 30살이면서 키가 175이상인 친구들 추출
+```
+
+
+
+```
+SELECT name, job, age, height
+FROM friends
+WHERE job = 'developer' AND NOT age = 30 AND NOT height BETWEEN 170 AND 180;
+```
+
+```
+직업이 개발자이면서, 나이가 30살이 아니면서, 키가 170이상 180이하가 아닌 친구 추출.
+```
+
+<hr>
+
+<h1>
+  함수
+</h1>
+
+내장함수는 단일행함수와 다중행함수로 나눌 수 있습니다.
+
+다중행 함수는 다시 집계함수, 그룹함수, 윈도우함수로 나눌 수 있습니다.
+
+<h3>
+  단일행함수
+</h3>
+
+1.문자열함수
+
+```
+LOWER('HI SQL'); => 'hi sql' : 모든 문자를 소문자로.
+
+UPPER('hi sql'); => 'HI SQL' : 모든 문자를 대문자로.
+
+ASCII('A'); => 65 : 문자나 숫자를 아스키코드번호로 바꾼다.
+
+CHAR(65); => 'A' : 아스키코드 번호를 문자나 숫자로 바꾼다.
+
+CONCAT('hi', 'sql') => 'hi sql' : 문자열 연결
+// 'hi' || 'sql'과 동일!
+
+SUBSTR('sql expert', 5, 3); => 'exp' : 문자열 자르기
+//5번째 문자부터 3개의 문자열 리턴. 3번째 인자가없으면 마지막 문자까지 리턴
+
+LENGTH('sql expert'); => 10 : 문자열의 길이 리턴
+
+LTRIM('xxxYYZZxYZ', 'x'); => 'YYZZxYZ' : 왼쪽부터 다른문자 만날때까지 해당문자열 제거
+
+RTRIM('XXXYYzzXYzz', 'z') => 'XXXYYzzXY' : 오른쪽에서 다른문자 만날때까지 해당문자열 제거
+
+TRIM('x' FROM 'xxYYZZxYZxx') => 'YYZZxYZ' : 양쪽에서 다른문자 만날때까지 해당문자열 제거
+
+RTRIM('XXYYZZXYZ       '); => 'XXYYZZXYZ' : 오른쪽에서 공백제거
+```
+
 
 
 <hr>
