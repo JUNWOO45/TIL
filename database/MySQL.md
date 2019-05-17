@@ -125,7 +125,107 @@
     SELECT topic.id AS topic_id, title FROM topic LEFT JOIN author ON topic.author_id = author.id;
     ```
 
-    
+
+
+
+<hr>
+
+<h1>
+  WHERE 절
+</h1>
+
+
+
+1.where 절에 들어가는 연산자
+
+```
+=, >, >=, <, <=, BETWEEN a AND b, IN(list), LIKE '비교문자열', IS NULL, AND, OR, NOT !=, ^=, <>, NOT 칼럼명 =, NOT 칼럼명 >, NOT BETWEEN a ADN b, NOT IN(list), IS NOT NULL
+```
+
+2.연산자 우선순위
+
+```
+1. 괄호()
+2. NOT
+3. 비교연산자
+4. AND
+5. OR
+```
+
+3.예제
+
+```
+SELECT player_name 선수이름, position 포지션, back_number 백넘버, height 키
+FROM player
+WHERE team_id = 'hello'
+;
+```
+
+```
+선수테이블에서 팀코드가 'hello'인 선수들의 이름, 포지션, 백넘버, 키를 가져오라는 의미.
+```
+
+4.문자 유형 비교 방법
+
+- 비교 연산자의 양쪽 모두 CHAR타입인 경우
+
+  ```
+  1. 서로 길이가 다르면 짧은쪽에 space를 추가하여 길이를 같게 한 후에 비교.
+  2. 서로 다른 문자가 나올때까지 비교
+  3. 달라진 첫번째 문자의 값에따라 크기 결정
+  4. BLANK의 수만 다르다면 서로 같은 값으로 인정
+  ```
+
+- 비교 연산자의 양쪽이 모두 VARCHAR타입인 경우
+
+  ```
+  1. 서로 다른 문자가 나올때까지 비교
+  2. 길이가 다르다면 짧은 것이 먼저 끝날때까지만 비교 후 길이가 긴 것이 크다고 판단.
+  3. 길이가 같고 다른것이 없으면 같다고 판단
+  ```
+
+5.SQL연산자
+
+```
+SELECT player_name 선수이름, position 포지션, back_number 백넘버, height 키
+FROM player
+WHERE team_id IN ('hello', 'hi')
+;
+```
+
+```
+선수테이블에서 팀코드가 'hello'나'hi'중에 있는지 판단해서 레코드를 달라는 의미.
+```
+
+
+
+```
+SELECT name, job, age
+FROM friends
+WHERE (job, age) IN (('manager', 20), ('developer', 30));
+```
+
+```
+직업이 매니저이면서 20살, 직업이 개발자이면서 30살인 친구정보를 추출
+```
+
+
+
+```
+SELECT name, job, age
+FROM friends
+WHERE job IN ('manager', 'developer') AND age IN(20,30);
+```
+
+```
+의미가 위에거랑은 다름.
+직업이 매니저, 개발자 둘 중 하나이면서 나이가 20,30살인 경우 정보 추출.
+즉, 매니저이면서 30살인 경우에도 조건을 충족해서 위의 SQL문과는 차이가있다.
+```
+
+
+
+
 
 <hr>
 
