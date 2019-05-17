@@ -2,6 +2,7 @@
   MySQL
 </h1>
 
+
 1. 데이터베이스(스키마)를 만들 때
 
 2. ```
@@ -242,3 +243,98 @@ WHERE
 
 
 훨씬 좋아진듯합니다..
+
+
+
+<hr>
+
+<h1>
+  서브쿼리
+</h1>
+
+서브쿼리란 하나의 sql문 안에 포함되어있는 또 다른 sql문입니다.
+
+서브쿼리를 사용하는 이유는, 아렬지지않은 기준을 이용한 검색을 하기위해서라고 합니다.
+
+서브커리는 메인쿼리의 컬럼을 모두 사용할 수 있지만, 메인쿼리는 서브쿼리의 컬럼을 사용 못한다고 합니다.
+
+<h3>
+  서브쿼리를 쓸 때 주의사항
+</h3>
+
+- 반드시 괄호로 감싸서 사용할 것
+- 단일행 또는 복수행 비교연산자 사용가능. 단, 단일행 비교연산자는 서브쿼리의 결과가 반드시 1건 이하.
+- 서브쿼리에서 ORDER BY 사용불가. 메인쿼리의 마지막 문장에 위치해야함.
+
+
+
+1.단일행 서브쿼리
+
+```
+SELECT player_name 선수명, position 포지션, back_no 백넘버
+FROM player
+WHERE height <= (SELECT AVG(height)
+									FROM player)
+ORDER BY player_name
+;
+```
+
+평균키를 알아내는 서브쿼리와, 그 결과로 평균키 이하인 선수를 출력했습니다.
+
+
+
+2.다중행 서브쿼리
+
+- 서브쿼리의 결과가 2건이상 반환될 수 있다면, "반드시" 다중행 비교연산자(IN, ALL, ANY, SOME)과 함께 사용해야합니다.
+
+  - IN(서브쿼리) : 서브쿼리의 결과에 존재하는 값과 동일한 조건을 의미
+  - 비교연산자 ALL(서브쿼리) : 비교연산자에 ">"를 썼다면, ALL이 모든 값을 만족하는 조건이기 때문에 결과중에 가장 큰값보다 커야 만족한다는 뜻
+  - 비교연산자 ANY(서브쿼리) : 비교연산자에 ">"를 썼다면, ANY가 어떤 하나라도 맞는지 확인하는 조건이기 때문에 결과중에 가장 작은값보다 크면 만족한다는 뜻.( = SOME )
+
+  - EXISTS(서브쿼리) : 서브쿼리의 결과를 만족하는 값이 존재하는지 여부 확인. 1건만 찾으면 더이상 검색 안함.
+
+```
+SELECT 
+	t.name 이름,
+	t.university 학교
+FROM teacher t
+WHERE t.name IN (SELECT t.name FROM teacher t WHERE t.name="누누")
+ORDER BY t.name
+;
+```
+
+누누라는 사람이 두명 이상일 때, 이름과 학교를 출력합니다.
+
+```
+내가 이해한 과정
+SELECT로 name, university를 출력할 것을 선택합니다.
+이 정보는 FROM으로 teacher에서 가져오려합니다.
+WHERE로 조건을 선택합니다.
+서브쿼리의 SELECT로 name을.. teacher로 부터.. name이 "누누"인 사람들을..IN 연산자를 사용했기에 특정값 여러개를 선택하였습니다..
+ORDER BY로 이러한 순서를 이름으로 정렬했습니다.
+```
+
+
+
+3.다중 컬럼 서브쿼리
+
+- 서브쿼리 결과로 여러 개의 컬럼이 반환되어 메인쿼리 조건과 동시에 비교되는 것.
+
+```
+SELECT 
+	name 이름,
+	university 학교
+	experience_hour 누적시간
+FROM teacher
+WHERE (university, experience_hour) IN (SELECT university, MAX(experience_hour) FROM teacher GROUP BY university)
+ORDER BY experience_hour DESC;
+```
+
+학교별로 experience_hour가 가장 큰 사람들의 정보를 출력.
+
+
+
+
+
+
+
