@@ -354,6 +354,71 @@ TRUNC(38.5235, 3) => 38.523 : 버림함수. 두번째 인자 소수점까지
 
 
 
+<h1>
+  GROUP BY
+</h1>
+
+여러행들의 그룹이 모여서 단 하나의 결과를 돌려주는 다중행 함수.
+
+group by 절은 행들을 소그룹화합니다.
+
+select절, having절, order by절에 사용할 수 있습니다.
+
+```
+SELECT position, ROUND(AVG(height), 2)
+FROM player
+GROUP BY position;
+```
+
+```
+포지션별 평균키를 추출합니다.
+```
+
+
+
+```
+SELECT 
+	t.university 학교
+ 	COUNT(*)
+FROM teacher t
+WHERE experience_hour >= 100
+GROUP BY university;
+```
+
+```
+experience_hour가 100보다 크거나 같은 인원들을 대학별로 그룹지어서 각각의 갯수를 샌 결과.
+```
+
+
+
+<h1>
+  HAVING
+</h1>
+
+GROUP BY한 결과에 조건을 붙이고 싶을때, 즉 GROUP BY의 WHERE절과 같다고 볼 수 있습니다.
+
+```
+SELECT 
+	t.university 학교
+ 	COUNT(*)
+FROM teacher t
+WHERE experience_hour >= 100
+GROUP BY university
+HAVING COUNT(*) > 10;
+```
+
+```
+GROUP BY의 조건에서 COUNT(*)가 10보다 큰 목록 추출
+```
+
+
+
+<hr>
+
+한가지 주의해야할 점은, COUNT(*)은 null값을 포함한 행의 수를 출력한다는 점입니다.
+
+
+
 <hr>
 
 처음 데이터를 뽑을때 겪은 시행착오의.. 의식의 흐름의.. 과정..
