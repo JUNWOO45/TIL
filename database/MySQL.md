@@ -413,9 +413,44 @@ GROUP BY의 조건에서 COUNT(*)가 10보다 큰 목록 추출
 
 
 
-<hr>
-
+```
 한가지 주의해야할 점은, COUNT(*)은 null값을 포함한 행의 수를 출력한다는 점입니다.
+```
+
+
+
+<h1>
+  ORDER BY
+</h1>
+
+order by절은 SQL문장으로 조회한 데이터들을 목적에 맞게 특정 칼럼을 기준으로 "정렬"하는데 사용됩니다.
+
+```
+SELECT name, job, age
+FROM friends
+ORDER BY name DESC
+;
+```
+
+```
+이름을 기준으로 DESC(내림차순)으로 정렬합니다.
+아무것도 안적으면, default로 ASC(오름차순)
+```
+
+
+
+<h3>
+  SELECT 문장 실행 순서
+</h3>
+
+```
+5. SELECT
+1. FROM
+2. WHERE
+3. GROUP BY
+4. HAVING BY
+6. ORDER BY 
+```
 
 
 
