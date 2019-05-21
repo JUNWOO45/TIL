@@ -452,6 +452,26 @@ ORDER BY name DESC
 6. ORDER BY 
 ```
 
+<hr>
+
+<h2>
+  조건문
+</h2>
+
+```
+SELECT
+	CASE 
+		WHEN s.name != s.nickname THEN s.name
+		ELSE
+			CASE
+				WHEN s.age = 10 THEN '10살'
+				ELSE '11살'
+			END
+	END AS 이중when문
+```
+
+
+
 
 
 <hr>
