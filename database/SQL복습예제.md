@@ -372,3 +372,11 @@ ORDER BY customer_id
 
 
 
+
+
+<hr>
+
+공부 자료 출처 : [http://contents.kocw.or.kr/document/lec/2011_2/dunksung/ParkUchang/03.pdf](http://contents.kocw.or.kr/document/lec/2011_2/dunksung/ParkUchang/03.pdf)
+
+
+
