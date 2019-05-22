@@ -22,3 +22,15 @@ sed -i '' 's/DEFINER=`root`@`%`//g' [DB_FILE_NAME].sql
 또는 텍스트에디터로 관련 문자열을 삭제해주면 해결된다고 합니다..
 
 <hr>
+
+<h1>
+  0522
+</h1>
+
+```
+grant all on *.* to 'root'@'%' identified by 'password' with grant option;
+```
+
+이걸로 해결.
+
+이 에러는 root가 가지고 있는 권한에 대한 문제라고 합니다.
