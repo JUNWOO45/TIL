@@ -1,5 +1,16 @@
 - ES6
   - [ES6 문법](/ES6/ES6-문법.md)
+- Database
+  - [MySQL](/database/MySQL.md)
+  - [SQL복습예제](/database/SQL복습예제.md)
+  - [troubleshooting](/database/troubleshooting.md)
+
+- GIT
+  - [계정설정](/git/계정설정.md)
+  - [git_command](/git/git_command.md)
+  - [커밋 메시지 잘 작성하기](/git/GIT-COMMIT-메시지-잘-작성하기.md)
+  - [linux_command](/git/linux_command.md)
+
 - Algorithm
   - [Array.diff](/Algorithm/Array.diff.md)
   - [count all the sheep](/Algorithm/count-all-the-sheep.md)
@@ -22,3 +33,10 @@
   - [평균구하기](/Algorithm/평균구하기.md)
   - [하샤드 수](/Algorithm/하샤드-수)
   - [핸드폰-번호-가리기](/Algorithm/핸드폰-번호-가리기.md)
+
+- ETC
+  - [configuration](/ETC/configuration.md)
+  - [express-generator&nodemon](/ETC/express-generator&nodemon.md)
+  - [npm 업데이트 안될때..](/ETC/npm이-업데이트-안될때.md)
+  - [vue cli install error](/ETC/vue-cli-install-error.md)
+
