@@ -8,13 +8,13 @@
 
 [https://junwoo45til.netlify.com/#/](https://junwoo45til.netlify.com/#/) 에서 확인해 볼 수 있습니다!
 
-<img width="1434" alt="Document1" src="https://user-images.githubusercontent.com/40589483/58728396-caa35600-8421-11e9-8ba5-ff6884f8ec34.png">
+
+
+<img width="1678" alt="스크린샷1" src="https://user-images.githubusercontent.com/40589483/58746809-9b322f00-849d-11e9-9c81-406612f1e369.png">
 
 <hr>
 
-<img width="1433" alt="Document2" src="https://user-images.githubusercontent.com/40589483/58728406-cf680a00-8421-11e9-98bb-03665ce73396.png">
-
-
+<img width="1675" alt="스크린샷2" src="https://user-images.githubusercontent.com/40589483/58746810-9cfbf280-849d-11e9-98de-a80253b3723a.png">
 
 
 <h2>규칙</h2>
