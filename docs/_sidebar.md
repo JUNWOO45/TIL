@@ -13,6 +13,7 @@
 - 📂**Javascript Project Management**
   - [모듈, 모듈포맷, 모듈로더와 모듈번들러란](/javascript_project_management/모듈,모듈포맷,모듈로더와모듈번들러란.md)
   - [빌드 시스템](/javascript_project_management/build_system.md)
+  - [npm audit](/javascript_project_management/npm-audit.md)
   
   
   
@@ -50,7 +51,8 @@
   - [git command](/git/git_command.md)
   - [커밋 메시지 잘 작성하기](/git/GIT-COMMIT-메시지-잘-작성하기.md)
   - [linux command](/git/linux_command.md)
-
+- [github에 프로젝트 등록하기](/git/git-init과git-remote-add.md)
+  
   
   
 - 📂**Algorithm 문제풀이**
