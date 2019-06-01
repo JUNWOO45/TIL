@@ -1,6 +1,6 @@
 - Javascript
-  - [ES2015](/javascript/ES2015.md)
-  - [ES6 문법 복습](/ES6/ES6-문법.md)
+  - [ES2015](/javascript/ES2015.md "ES2015")
+  - [ES6 문법 복습](/ES6/ES6-문법.md "ES6복습")
   - [How JavaScirpt Works](/javascript/HowJavaScirptWorks.md)
   - [nodeJS](/javascript/nodeJS.md)
   - [Primitive vs Reference](/javascript/Primitive-vs-Reference.md)
