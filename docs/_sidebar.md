@@ -29,8 +29,8 @@
   - [데이터 바인딩](/vue/데이터바인딩.md)
   - [뷰 템플릿](/vue/뷰-템플릿.md)
   - [클래스 바인딩](/vue/클래스바인딩.md)
-  - [CLI](/vue/CLI.md)
   - [싱글 파일 컴포넌트](/vue/싱글파일컴포넌트.md)
+  - [CLI](/vue/CLI.md)
   - [뷰 로더](/vue/뷰로더.md)
   - [vue cli install error](/ETC/vue-cli-install-error.md)
   
