@@ -1,4 +1,4 @@
-- Javascript
+- 📂**Javascript**
   - [ES2015](/javascript/ES2015.md "ES2015")
   - [ES6 문법 복습](/ES6/ES6-문법.md "ES6복습")
   - [How JavaScirpt Works](/javascript/HowJavaScirptWorks.md)
@@ -10,20 +10,20 @@
   
   
   
-- Javascript Project Management
+- 📂**Javascript Project Management**
   - [모듈, 모듈포맷, 모듈로더와 모듈번들러란](/javascript_project_management/모듈,모듈포맷,모듈로더와모듈번들러란.md)
   - [빌드 시스템](/javascript_project_management/build_system.md)
   
   
   
-- HTTP
+- 📂**HTTP**
 
   - [CORS](/javascript/CORS.md)
   - [RESTful](/javascript/RESTful.md)
 
   
 
-- Vue
+- 📂**Vue**
   - [컴포넌트 통신](/vue/컴포넌트통신.md)
   - [뷰 라우터](/vue/뷰라우터.md)
   - [데이터 바인딩](/vue/데이터바인딩.md)
@@ -36,16 +36,16 @@
   
   
   
-- Database
+- 📂**Database**
   
   - [SQL&NoSQL](/javascript/SQL&NoSQL.md)
   - [MySQL](/database/MySQL.md)
-- [SQL복습예제](/database/SQL복습예제.md)
+  - [SQL복습예제](/database/SQL복습예제.md)
   - [troubleshoot](/database/troubleshooting.md)
   
   
   
-- GIT
+- 📂**GIT**
   - [계정설정](/git/계정설정.md)
   - [git command](/git/git_command.md)
   - [커밋 메시지 잘 작성하기](/git/GIT-COMMIT-메시지-잘-작성하기.md)
@@ -53,7 +53,7 @@
 
   
   
-- Algorithm 문제풀이
+- 📂**Algorithm 문제풀이**
   - [Array.diff](/Algorithm/Array.diff.md)
   - [count all the sheep](/Algorithm/count-all-the-sheep.md)
   - [Count characters in your string](/Algorithm/Count-characters-in-your-string.md)
@@ -78,14 +78,14 @@
 
   
   
-- ETC
+- 📂**ETC**
   - [VScode configuration](/ETC/configuration.md)
   - [express-generator&nodemon](/ETC/express-generator&nodemon.md)
   - [npm 업데이트 안될때..](/ETC/npm이-업데이트-안될때.md)
   
   
   
-- TIL2018
+- 📝**TIL2018**
 
   - [0831-0901](/til18/0831-0901.md)
   - [0902-0909](/til18/0902-0909.md)
@@ -109,7 +109,7 @@
 
   
 
-- TIL2019
+- 📝**TIL2019**
 
   - [0107-0113](/til19/0107-0113.md)
   - [0114-0120](/til19/0114-0120.md)
