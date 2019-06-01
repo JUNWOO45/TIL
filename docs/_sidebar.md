@@ -51,7 +51,7 @@
   - [git command](/git/git_command.md)
   - [커밋 메시지 잘 작성하기](/git/GIT-COMMIT-메시지-잘-작성하기.md)
   - [linux command](/git/linux_command.md)
-- [github에 프로젝트 등록하기](/git/git-init과git-remote-add.md)
+  - [github에 프로젝트 등록하기](/git/git-init과git-remote-add.md)
   
   
   
