@@ -36,6 +36,7 @@
   - [CLI](/vue/CLI.md)
   - [뷰 로더](/vue/뷰로더.md)
   - [비동기 갱신 큐](/vue/비동기갱신큐.md)
+  - [Vuex](/vue/vuex.md)
   - [vue cli install error](/ETC/vue-cli-install-error.md)
   
   
