@@ -304,3 +304,54 @@ mutations: {
 }
 ```
 
+
+
+<h3>
+  Actions란?
+</h3>
+
+Mutations에는 순차적인 로직들만 선언하고, Actions에는 비순차적 또는 비동기적 처리로 로직들을 선언합니다.
+
+왜이렇게 Mutations와 Actions로 나눠서 등록할까요?
+
+Mutations는 State관리에 주안점을 두고 있습니다.
+
+**"상태관리"**자체가 한 데이터에대해 여러개의 컴포넌트가 관여하는 것을 효율적으로 관리하기위함인데, Mutations에 비동기 처리 로직들이 포함된다면, 같은 값에대해 여러개의 컴포넌트에서 변경을 요청했을때 그 변경 순서 파악이 어렵기 때문입니다.
+
+이러한 문제점과 마주치지않기위해 Actions에는 비동기 처리 로직을, Mutations에는 동기 처리 로직으로 나눠서 구현하는 것입니다.
+
+그렇다면, setTimeout()이나 서버와의 http통신처리같은 로직은 Actions에 선언하겠군요!
+
+<h3>
+  Actions 등록
+</h3>
+
+```
+//store.js
+
+export const store = new Vuex.Store({
+	//...
+	mutations: {
+		addCounter: function(state, payload) {
+			return state.counter++;
+		}
+	},
+	actions: {
+		addCounter: function(context) {
+			return context.commit('addCounter');
+		}
+	}
+})
+```
+
+actions는 결국 mutations의 메서드를 호출합니다.
+
+```
+//App.vue
+methods: {
+	addCounter() {
+		this.$store.dispatch('addCounter');
+	}
+}
+```
+
