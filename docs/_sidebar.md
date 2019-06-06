@@ -59,6 +59,7 @@
   - [github에 프로젝트 등록하기](/git/git-init과git-remote-add.md)
   - [git log 시각화](/git/git_log_시각화.md)
   - [git reflog로 hard reset하기](git/git_reflog.md)
+  - [git의 내부](/git/git의내부.md)
   
   
   
