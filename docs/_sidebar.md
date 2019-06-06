@@ -60,31 +60,6 @@
   
   
   
-- 📂**Algorithm 문제풀이**
-  - [Array.diff](/Algorithm/Array.diff.md)
-  - [count all the sheep](/Algorithm/count-all-the-sheep.md)
-  - [Count characters in your string](/Algorithm/Count-characters-in-your-string.md)
-  - [Create Phone Number](/Algorithm/Create-Phone-Number(6kyu).md)
-  - [Does my number look big in this](/Algorithm/Does-my-number-look-big-in-this.md)
-  - [Find the unique number](/Algorithm/Find-the-unique-number.md)
-  - [Growth of a population](/Algorithm/Growth-of-a-population.md)
-  - [Mumbling](/Algorithm/Mumbling.md)
-  - [My languages](/Algorithm/My-languages.md)
-  - [Rectangle into Squares](/Algorithm/Rectangle-into-Squares.md)
-  - [Remove all the marked elements of a list](/Algorithm/Remove-all-the-marked-elements-of-a-list.md)
-  - [ReverseLetter](/Algorithm/ReverseLetter.md)
-  - [문자열 내 p와 y의 개수](/algorithm/문자열-내-p와-y의-개수.md)
-  - [서울에서 김서방 찾기](/Algorithm/서울에서-김서방-찾기.md)
-  - [자연수 뒤집어 배열로 만들기](/Algorithm/자연수-뒤집어-배열로-만들기.md)
-  - [정수 내림차순으로 배치하기](/Algorithm/정수-내림차순으로-배치하기.md)
-  - [짝수와홀수](/Algorithm/짝수와홀수.md)
-  - [최댓값과최솟값](/Algorithm/최댓값과최솟값.md)
-  - [평균구하기](/Algorithm/평균구하기.md)
-  - [하샤드 수](/Algorithm/하샤드-수)
-  - [핸드폰-번호-가리기](/Algorithm/핸드폰-번호-가리기.md)
-
-  
-  
 - 📂**ETC**
   - [VScode configuration](/ETC/configuration.md)
   - [express-generator&nodemon](/ETC/express-generator&nodemon.md)
