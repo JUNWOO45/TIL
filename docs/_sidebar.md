@@ -7,6 +7,7 @@
   - [Promise](/javascript/Promise.md)
   - [Recursion](/javascript/Recursion.md)
   - [this](/javascript/this를판별하는5가지방법.md)
+  - [렌더링엔진과 성능최적화](/javascript/렌더링엔진과성능최적화.md)
   
   
   
