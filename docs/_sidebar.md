@@ -9,6 +9,7 @@
   - [this](/javascript/this를판별하는5가지방법.md)
   - [렌더링엔진과 성능최적화](/javascript/렌더링엔진과성능최적화.md)
   - [자바스크립트의 함수](/javascript/자바스크립트의함수.md)
+  - [조건문을 더 멋지게 작성하는 5가지 방법](/javascript/WriteBetterConditionals.md)
   
   
   
