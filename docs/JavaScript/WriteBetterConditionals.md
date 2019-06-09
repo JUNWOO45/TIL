@@ -298,4 +298,4 @@ function test() {
 
 #### 자료출처
 
-https://ultimatecourses.com/blog/deprecating-the-switch-statement-for-object-literals
+https://scotch.io/bar-talk/5-tips-to-write-better-conditionals-in-javascript#toc-5-use-array-every-array-some-for-all-partial-criteria
