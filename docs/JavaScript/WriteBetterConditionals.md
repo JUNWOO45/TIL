@@ -292,3 +292,10 @@ function test() {
 }
 ```
 
+
+
+---
+
+#### 자료출처
+
+https://ultimatecourses.com/blog/deprecating-the-switch-statement-for-object-literals
