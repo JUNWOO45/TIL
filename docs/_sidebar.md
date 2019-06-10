@@ -2,76 +2,76 @@
   - [ES2015](/javascript/ES2015.md "ES2015")
   - [ES6 문법 복습](/ES6/ES6-문법.md "ES6복습")
   - [How JavaScirpt Works](/javascript/HowJavaScirptWorks.md)
-  - [nodeJS](/javascript/nodeJS.md)
+  - [nodeJS](/javascript/nodeJS.md "nodejs란")
   - [Primitive vs Reference](/javascript/Primitive-vs-Reference.md)
-  - [Promise](/javascript/Promise.md)
-  - [Recursion](/javascript/Recursion.md)
-  - [this](/javascript/this를판별하는5가지방법.md)
-  - [렌더링엔진과 성능최적화](/javascript/렌더링엔진과성능최적화.md)
-  - [자바스크립트의 함수](/javascript/자바스크립트의함수.md)
-  - [조건문을 더 멋지게 작성하는 5가지 방법](/javascript/WriteBetterConditionals.md)
+  - [Promise](/javascript/Promise.md "promise란")
+  - [Recursion](/javascript/Recursion.md "recursion이란")
+  - [this](/javascript/this를판별하는5가지방법.md "javascript this")
+  - [렌더링엔진과 성능최적화](/javascript/렌더링엔진과성능최적화.md "자바스크립트는 어떻게 동작하는가")
+  - [자바스크립트의 함수](/javascript/자바스크립트의함수.md "자바스크립트 함수")
+  - [조건문을 더 멋지게 작성하는 5가지 방법](/javascript/WriteBetterConditionals.md "자바스크립트 조건문")
   
   
   
 - 📂**Javascript Project Management**
-  - [모듈, 모듈포맷, 모듈로더와 모듈번들러란](/javascript_project_management/모듈,모듈포맷,모듈로더와모듈번들러란.md)
-  - [빌드 시스템](/javascript_project_management/build_system.md)
-  - [npm audit](/javascript_project_management/npm-audit.md)
+  - [모듈, 모듈포맷, 모듈로더와 모듈번들러란](/javascript_project_management/모듈,모듈포맷,모듈로더와모듈번들러란.md "모듈번들러")
+  - [빌드 시스템](/javascript_project_management/build_system.md "빌드시스템이란")
+  - [npm audit](/javascript_project_management/npm-audit.md "npm audit")
   
   
   
 - 📂**HTTP**
 
-  - [CORS](/javascript/CORS.md)
-  - [RESTful](/javascript/RESTful.md)
+  - [CORS](/javascript/CORS.md "cors란")
+  - [RESTful](/javascript/RESTful.md "restful이란")
 
   
 
 - 📂**Vue**
   
-  - [뷰 인스턴스](/vue/뷰인스턴스.md)
-  - [컴포넌트 통신](/vue/컴포넌트통신.md)
-  - [뷰 라우터](/vue/뷰라우터.md)
-  - [데이터 바인딩](/vue/데이터바인딩.md)
-  - [뷰 템플릿](/vue/뷰-템플릿.md)
-  - [클래스 바인딩](/vue/클래스바인딩.md)
-  - [싱글 파일 컴포넌트](/vue/싱글파일컴포넌트.md)
-  - [CLI](/vue/CLI.md)
-  - [뷰 로더](/vue/뷰로더.md)
+  - [뷰 인스턴스](/vue/뷰인스턴스.md "뷰인스턴스")
+  - [컴포넌트 통신](/vue/컴포넌트통신.md "뷰 컴포넌트")
+  - [뷰 라우터](/vue/뷰라우터.md "뷰 라우터")
+  - [데이터 바인딩](/vue/데이터바인딩.md "데이터 바인딩")
+  - [뷰 템플릿](/vue/뷰-템플릿.md "뷰 템플릿")
+  - [클래스 바인딩](/vue/클래스바인딩.md "뷰 클래스바인딩")
+  - [싱글 파일 컴포넌트](/vue/싱글파일컴포넌트.md "뷰 싱글파일 컴포넌트")
+  - [CLI](/vue/CLI.md "뷰 cli")
+  - [뷰 로더](/vue/뷰로더.md "뷰 로더")
   - [비동기 갱신 큐](/vue/비동기갱신큐.md)
-  - [Vuex](/vue/vuex.md)
+  - [Vuex](/vue/vuex.md "vuex란")
   - [vue cli install error](/ETC/vue-cli-install-error.md)
   
   
   
 - 📂**Database**
   
-  - [SQL&NoSQL](/javascript/SQL&NoSQL.md)
-  - [MySQL](/database/MySQL.md)
+  - [SQL&NoSQL](/javascript/SQL&NoSQL.md "sql&nosql")
+  - [MySQL](/database/MySQL.md "mysql이란")
   - [SQL복습예제](/database/SQL복습예제.md)
   - [troubleshoot](/database/troubleshooting.md)
   
   
   
 - 📂**GIT**
-  - [계정설정](/git/계정설정.md)
-  - [git command](/git/git_command.md)
-  - [커밋 메시지 잘 작성하기](/git/GIT-COMMIT-메시지-잘-작성하기.md)
-  - [linux command](/git/linux_command.md)
+  - [계정설정](/git/계정설정.md "git 계정설정")
+  - [git command](/git/git_command.md "git command 정리")
+  - [커밋 메시지 잘 작성하기](/git/GIT-COMMIT-메시지-잘-작성하기.md "커밋메시지 잘 작성하기")
+  - [linux command](/git/linux_command.md "linux command")
   - [github에 프로젝트 등록하기](/git/git-init과git-remote-add.md)
-  - [git log 시각화](/git/git_log_시각화.md)
-  - [git reflog로 hard reset하기](git/git_reflog.md)
-  - [git의 내부](/git/git의내부.md)
+  - [git log 시각화](/git/git_log_시각화.md "git log 시각화")
+  - [git reflog로 hard reset하기](git/git_reflog.md "git reflog")
+  - [git의 내부](/git/git의내부.md "git의 내부")
   
   
   
 - 📂**ETC**
   - [VScode configuration](/ETC/configuration.md)
-  - [express-generator&nodemon](/ETC/express-generator&nodemon.md)
-  - [npm 업데이트 안될때..](/ETC/npm이-업데이트-안될때.md)
-  - [로컬스토리지&세션스토리지&쿠키](/ETC/로컬스토리지&세션스토리지&쿠키.md)
-  - [마크다운 문법정리](/etc/markdown.md)
-  - [브라우저는 어떻게 동작하는가](/etc/브라우저는어떻게동작하는가.md)
+  - [express-generator&nodemon](/ETC/express-generator&nodemon.md "nodemon적용")
+  - [npm 업데이트 안될때..](/ETC/npm이-업데이트-안될때.md "npm업데이트")
+  - [로컬스토리지&세션스토리지&쿠키](/ETC/로컬스토리지&세션스토리지&쿠키.md "로컬스토리지 세션스토리지 쿠키")
+  - [마크다운 문법정리](/etc/markdown.md "마크다운 문법정리")
+  - [브라우저는 어떻게 동작하는가](/etc/브라우저는어떻게동작하는가.md "브라우저는 어떻게 동작하는가")
   
   
   
@@ -123,4 +123,5 @@
   - [0520-0526](/til19/0520-0526.md)
   - [0527-0602](/til19/0527-0602.md)
   - [0603-0609](/til19/0603-0609.md)
+  - [0610-0616](/til19/0610-0616.md)
 
