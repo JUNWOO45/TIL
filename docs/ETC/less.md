@@ -177,3 +177,68 @@ Output:
 }
 ```
 
+가상선택자를 사용할 수 있습니다.
+
+**&기호는 바로 위의 부모 선택자를 가리킵니다!**
+
+```css
+.parent {
+  display: block;
+  color: red;
+  &:hover {
+    font-size: 50px;
+    color: orange;
+  }
+}
+```
+
+Output:
+
+```css
+.parent {
+  display: block;
+  color: red;
+}
+.parent:hover {
+  font-size: 50px;
+  color: orange;
+}
+```
+
+
+
+## Operations
+
+```css
+//숫자들은 같은 단위로 변환됩니다.
+@conversion01: 5cm+10mm;	//6cm
+@conversion02: 2 - 3cm - 5mm	//-1.5cm
+  
+//변환 불가능!
+@imposibble01: 2 + 5px - 3cm;	// 4px
+
+//example
+@base: 5%;
+@filler: @base * 2;	//10%
+@other: @base + @filler //15%
+```
+
+```css
+@var: 1px + 5 //6px
+@width: (@var + 5) * 2;
+
+.operation {
+  width: @width;
+  border: (@width / 11) solid black;
+}
+```
+
+Output:
+
+```css
+.operation {
+  width: 22px;
+  border: 2px solid black;
+}
+```
+
