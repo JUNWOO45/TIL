@@ -67,6 +67,12 @@
   
   
   
+- 📂**Python**
+
+  - [문자열 포맷](/python/문자열포맷.md "파이썬 문자열 포맷")
+
+  
+
 - 📂**ETC**
   - [VScode configuration](/ETC/configuration.md)
   - [express-generator&nodemon](/ETC/express-generator&nodemon.md "nodemon적용")
