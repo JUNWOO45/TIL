@@ -7,7 +7,7 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
-  <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+  <!-- <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css"> -->
 </head>
 <body>
   <div id="app">로딩중입니다</div>
@@ -23,8 +23,15 @@
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
   <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+
+  <script>
+    window.$docsify = {
+      disqus: 'junwoo45til'
+    }
+  </script>
+  <script src="//unpkg.com/docsify/lib/plugins/disqus.min.js"></script>
   
-  <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
+  <!-- <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
   <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.10.0/js/md5.min.js"></script>
   <script>
@@ -36,7 +43,7 @@
       admin: ['junwoo45'],
       id: md5(window.location.pathname),
       distractionFreeMode: false
-    })
+    }) -->
   </script>
 </body>
 </html>
