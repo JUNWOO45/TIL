@@ -1,14 +1,15 @@
 - 📂**Javascript**
-  - [ES2015](/javascript/ES2015.md "ES2015")
+  
+  - [객체지향 프로그래밍](/javascript/객체지향프로그래밍.md "자바스크립트 객체지향프로그래밍")
+  - [자바스크립트의 함수](/javascript/자바스크립트의함수.md "자바스크립트 함수")
   - [ES6 문법 복습](/ES6/ES6-문법.md "ES6복습")
-  - [How JavaScirpt Works](/javascript/HowJavaScirptWorks.md)
+  - [렌더링엔진과 성능최적화](/javascript/렌더링엔진과성능최적화.md "자바스크립트는 어떻게 동작하는가")
+  - [this](/javascript/this를판별하는5가지방법.md "javascript this")
   - [nodeJS](/javascript/nodeJS.md "nodejs란")
   - [Primitive vs Reference](/javascript/Primitive-vs-Reference.md)
   - [Promise](/javascript/Promise.md "promise란")
   - [Recursion](/javascript/Recursion.md "recursion이란")
-  - [this](/javascript/this를판별하는5가지방법.md "javascript this")
-  - [렌더링엔진과 성능최적화](/javascript/렌더링엔진과성능최적화.md "자바스크립트는 어떻게 동작하는가")
-  - [자바스크립트의 함수](/javascript/자바스크립트의함수.md "자바스크립트 함수")
+  - [ES2015](/javascript/ES2015.md "ES2015")
   - [조건문을 더 멋지게 작성하는 5가지 방법](/javascript/WriteBetterConditionals.md "자바스크립트 조건문")
   
   
@@ -48,12 +49,14 @@
   
   - [SQL&NoSQL](/javascript/SQL&NoSQL.md "sql&nosql")
   - [MySQL](/database/MySQL.md "mysql이란")
-  - [SQL복습예제](/database/SQL복습예제.md)
+  - [SQL복습](/database/SQL복습예제.md)
   - [troubleshoot](/database/troubleshooting.md)
   
   
   
 - 📂**GIT**
+  
+  - [git의 내부](/git/git의내부.md "git의 내부")
   - [계정설정](/git/계정설정.md "git 계정설정")
   - [git command](/git/git_command.md "git command 정리")
   - [커밋 메시지 잘 작성하기](/git/GIT-COMMIT-메시지-잘-작성하기.md "커밋메시지 잘 작성하기")
@@ -61,18 +64,25 @@
   - [github에 프로젝트 등록하기](/git/git-init과git-remote-add.md)
   - [git log 시각화](/git/git_log_시각화.md "git log 시각화")
   - [git reflog로 hard reset하기](git/git_reflog.md "git reflog")
-  - [git의 내부](/git/git의내부.md "git의 내부")
   
   
   
+- 📂**Python**
+
+  - [문자열 포맷](/python/문자열포맷.md "파이썬 문자열 포맷")
+
+  
+
 - 📂**ETC**
-  - [VScode configuration](/ETC/configuration.md)
+  
+  - [브라우저는 어떻게 동작하는가](/etc/브라우저는어떻게동작하는가.md "브라우저는 어떻게 동작하는가")
+  - [마크다운 문법정리](/etc/markdown.md "마크다운 문법정리")
+  - [로컬스토리지&세션스토리지&쿠키](/ETC/로컬스토리지&세션스토리지&쿠키.md "로컬스토리지 세션스토리지 쿠키")
   - [express-generator&nodemon](/ETC/express-generator&nodemon.md "nodemon적용")
   - [npm 업데이트 안될때..](/ETC/npm이-업데이트-안될때.md "npm업데이트")
-  - [로컬스토리지&세션스토리지&쿠키](/ETC/로컬스토리지&세션스토리지&쿠키.md "로컬스토리지 세션스토리지 쿠키")
-  - [마크다운 문법정리](/etc/markdown.md "마크다운 문법정리")
-  - [브라우저는 어떻게 동작하는가](/etc/브라우저는어떻게동작하는가.md "브라우저는 어떻게 동작하는가")
+  - [VScode configuration](/ETC/configuration.md)
   - [emmet이란](/etc/emmet이란.md "emmet이란")
+  - [LESS](/etc/less.md)
   
   
   
