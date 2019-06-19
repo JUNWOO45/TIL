@@ -1,7 +1,7 @@
 add + commit
 
 ```
-git commit -am "[message]"
+$ git commit -am "[message]"
 ```
 
 
@@ -9,7 +9,7 @@ git commit -am "[message]"
 branch 생성
 
 ```
-git checkout -b [branch name]
+$ git checkout -b [branch name]
 ```
 
 
@@ -17,7 +17,32 @@ git checkout -b [branch name]
 branch이름 바꾸기
 
 ```
-git branch -M [change name]
+$ git branch -M [change name]
+```
+
+
+
+branch삭제
+
+```
+$ git branch -d [branch name]
+```
+
+
+
+원격 저장소의 branch 삭제
+
+1.
+
+```
+$ git branch -d [branch name]
+$ git push origin [branch name]
+```
+
+2.
+
+```
+$ git push origin --delete [branch name]
 ```
 
 
@@ -25,7 +50,7 @@ git branch -M [change name]
 특정 branch에 push하기
 
 ```
-git push origin [branch name]
+$ git push origin [branch name]
 ```
 
 
@@ -33,7 +58,7 @@ git push origin [branch name]
 branch간 이동하기
 
 ```
-git checkout [branch name]
+$ git checkout [branch name]
 ```
 
 
@@ -41,7 +66,7 @@ git checkout [branch name]
 commit log 확인
 
 ```
-git log
+$ git log
 ```
 
 
@@ -51,7 +76,7 @@ git log
 변경이력이 있는 파일 변경사항 취소
 
 ```
-git checkout -- [file name]
+$ git checkout -- [file name]
 ```
 
 
@@ -59,7 +84,7 @@ git checkout -- [file name]
 바로 직전 commit message 수정
 
 ```
-git commit --amend
+$ git commit --amend
 ```
 
 
@@ -67,9 +92,9 @@ git commit --amend
 commit한개 취소
 
 ```
-git reset HEAD^
+$ git reset HEAD^
 
-git revert HEAD
+$ git revert HEAD
 ```
 
 
@@ -77,7 +102,7 @@ git revert HEAD
 현재 branch의 변경사항을 커밋없이 저장해두기
 
 ```
-git stash
+$ git stash
 ```
 
 
@@ -85,7 +110,7 @@ git stash
 stash로 저장해둔 변경 내역 불러오기
 
 ```
-git stash pop
+$ git stash pop
 ```
 
 
@@ -93,7 +118,7 @@ git stash pop
 다른 banch의 특정 commit을 가져와서 merge하기
 
 ```
-git cherry-pick [commit hash number]
+$ git cherry-pick [commit hash number]
 ```
 
 <hr>
