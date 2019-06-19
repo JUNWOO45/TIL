@@ -1,7 +1,132 @@
 <h1>
   Vuex
 </h1>
+- 많은 컴포넌트의 데이터를 관리하기 위한 상태관리 패턴이자 라이브러리 입니다.
 
+  - 복잡한 어플리케이션에서는 컴포넌트의 갯수가 많아지면 컴포넌트간 데이터의 전달이 어려워지기 때문입니다.
+
+- 리액트의 Flux패턴으로부터 시작되었습니다.
+
+- 그렇다면 Flux란..?
+
+  - MVC패턴이 가지게되는 복잡한 데이터 흐름문제를 해결하는 패턴입니다.
+
+    Action -> Dispatcher -> Model -> View
+
+    1.action: 화면에서 발생하는 이벤트나 사용자의 입력을 의미합니다.
+
+    2.dispatcher: 데이터를 변경하는 방법, 메서드
+
+    3.model(Store): 화면에 표시할 데이터
+
+    4.view: 사용자에게 비춰지는 화면
+
+- 알아갈 것
+
+  - state: 여러 컴포넌트에 공유되는 데이터 data
+
+    ```
+    //Vue
+    data: function() {
+    	message: 'hi'
+    }
+    
+    //Vuex
+    state: function() {
+    	message: 'hi'
+    }
+    ```
+
+    ```html
+    //Vue
+    <p>
+      {{ message }}
+    </p>
+    
+    //Vuex
+    <p>
+      {{ this.$store.state.message }}
+    </p>
+    ```
+
+    
+
+  - getters: 연산된 state값에 접근하는 속성 computed
+
+    ```
+    //store.js
+    
+    state: {
+    	num: 100
+    },
+    getters: {
+    	getNum(state) {
+    		return state.num;
+    	},
+    	doubleNum(state) {
+    		return state.num * 2;
+    	}
+    }
+    ```
+
+    ```html
+    <p>
+      {{ this.$store.getters.getNum }}
+    </p>
+    <p>
+      {{ this.$store.getters.doubleNum }}
+    </p>
+    ```
+
+    
+
+  - mutations: state값을 변경하는 **유일한 방법** 입니다. methods
+
+    commit()으로 동작시킬 수 있습니다.
+
+    ```javascript
+    //store.js
+    
+    state: {
+      num: 100
+    },
+    mutations: {
+      printNum(state) {
+        return state.num;
+      },
+      sumNum(state, anotherNum) {
+        return state.num + anotherNum;
+      }
+    }
+    
+    
+    //App.vue
+    this.$store.commit('printNum');
+    this.$store.commit('sumNum', 50);
+    ```
+
+    ```
+    //store.js
+    
+    state: {
+    	myName: 'junwoo'
+    },
+    mutations: {
+    	greeting(state, anotherName) {
+    		return `${state.myName}, ${anotherName.name1}, ${anotherName.name2} hi!`
+    	}
+    }
+    
+    //App.vue
+    this.$store.commit('greeting', {
+    	name1: 'gaon',
+    	name2: 'yeoul'
+    })
+    ```
+
+    
+
+  - actions: 비동기 처리 로직을 선언하는 메서드 async methods
 
 
 <h3>
