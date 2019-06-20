@@ -126,7 +126,78 @@
 
     
 
-  - actions: 비동기 처리 로직을 선언하는 메서드 async methods
+  - actions: 비동기 처리 로직을 선언하는 메서드. async methods, 비동기 로직을 담당하는 mutations
+
+  - 데이터 요청, Promise, ES6 async같은 비동기처리는 모두 actions에 선언해야합니다.
+
+  - 예제 1
+
+    ```
+    //store.js
+    
+    state: {
+    	num: 100
+    },
+    mutations: {
+    	doubleNum(state) {
+    		state.num + state.num;
+    	}
+    },
+    actions: {
+    	//context로 store의 메서드와 속성에 접근할 수 있습니다.
+    	delayDoubleNum(context) {
+    		setTimeout(() => {
+    			context.commit('doubleNum');
+        }, 1000);
+    	}
+    }
+    ```
+
+    ```
+    //App.vue
+    
+    ...
+    methods: {
+    	useSetTimeout() {
+    		this.$store.dispatch('delayDoubleNum');
+    	}
+    }
+    ...
+    ```
+
+  - 예제2
+
+    ```
+    //store.js
+    
+    mutations: {
+    	saveMoney(state, fetchedMoney) {
+    		state.bank = fetchedMoney
+    	}
+    },
+    actions: {
+    	fetchData(context) {
+    		return axios.get('https://example.com/bank')
+    			.then(res => {
+    				context.commit('saveMoney', res)
+    			}) ;
+    	}
+    }
+    ```
+
+    ```
+    //App.vue
+    
+    ...
+    methods: {
+    	getAPI() {
+    		this.$store.dispatch('fetchData');
+    	}
+    }
+    ...
+    ```
+
+    
 
 
 <h3>
