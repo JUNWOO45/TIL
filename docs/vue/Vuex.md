@@ -696,3 +696,28 @@ actions: {
 <button @click="delaySayGreeting">[delay] click me!</button>
 ```
 
+
+
+---
+
+- Vuex에 선언한 속성을 그래도 컴포넌트에 연결
+
+  ```
+  //배열 리터럴
+  ...mapMutations([
+  	'sayGreeting',	//이건... 'sayGreeting': sayGreeting 와 같음.
+  	'addCounter'
+  ])
+  ```
+
+- Vuex에 선언한 속성을 컴포넌트의 특정 메서드에다가 연결하는 문법
+
+  ```
+  //객체 리터럴
+  ...mapMutations({
+  	popupMsg: 'clickBtn'	//컴포넌트 메서드 명: store의 mutation 이름
+  })
+  ```
+
+  
+
