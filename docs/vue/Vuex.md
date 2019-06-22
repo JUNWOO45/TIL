@@ -632,3 +632,67 @@ getters: {
 <p>{{ this.reverseGreeting }}</p>
 ```
 
+
+
+### mapMutations
+
+```
+//App.vue
+
+import { mapMutations } from 'vuex';
+
+methods: {
+	...mapMutations(['sayGreeting']),
+	...,
+	...
+}
+```
+
+```
+//store.js
+
+mutations : {
+	sayGreeting(state) {
+		console.log(state.greeting);
+	}
+}
+```
+
+```
+<button @click="sayGreeting">click me!</button>
+```
+
+
+
+- 마치 methods에 sayGreeting이라는 메소드가 존재하는 것처럼 동작합니다.
+- 하지만 실제 sayGreeting이라는 녀석의 로직들은 store에 저장되어 있을 뿐이죠!
+
+
+
+### mapActions
+
+```
+//App.vue
+
+import { mapActions } from 'vuex';
+methods: {
+	...mapActions(['delaySayGreeting'])
+}
+```
+
+```
+//store.jks
+
+actions: {
+	delaySayGreeting(context) {
+		setTimeout(function() {
+			context.commit('sayGreeting')
+		}, 1000);
+	}
+}
+```
+
+```
+<button @click="delaySayGreeting">[delay] click me!</button>
+```
+
