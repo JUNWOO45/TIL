@@ -197,7 +197,7 @@
     ...
     ```
 
-    
+---
 
 
 <h3>
@@ -549,5 +549,86 @@ methods: {
 		this.$store.dispatch('addCounter');
 	}
 }
+```
+
+
+
+
+
+------
+
+## Helper 함수
+
+
+
+각 속성들을 더 쉽게 사용하는 Helper함수에 대해서도 알아보고 가겠습니다.
+
+Helper함수는  Store에 있는 4가지 속성들을 더욱 쉽고 간편하게 코딩할 수 있게 해주는 함수들입니다.
+
+- state: mapState
+- getters: mapGetters
+- mutations: mapMutations
+- actions: mapActions
+
+
+
+### mapState
+
+- Vuex에 선언한 state속성의 사용을 더욱 쉽게 해주는 헬퍼
+
+  우선, 헬퍼를 사용하기 위해서는 사용하고자하는 vue파일에서 헬퍼를 로딩해야합니다.
+
+  ```
+  //App.vue
+  
+  import { mapState } from 'vuex';
+  
+  computed() {
+  	//num() { return this$store.state.num; } 이걸 줄이면 아래와 같음....
+  	...mapState(['num']);
+  }
+  ```
+
+  ```
+  //store.js
+  
+  state: {
+  	num: 100
+  }
+  ```
+
+  ```
+  // <p>{{ this.$store.state.num }}</p>
+  
+  <p>{{ this.num }}</p> 
+  ```
+
+
+
+### mapGetters
+
+```
+//App.vue
+
+import { mapGetters } from 'vuex';
+
+computed() {
+	...mapGetters(['reverseGreeting'])
+}
+```
+
+```
+//store.js
+getters: {
+	reverseGreeting(state) {
+		return state.greeting.split('').reverse().join('');
+	}
+}
+```
+
+```
+//<p>{{ this.$store.getters.reverseGreeting }}</p>
+
+<p>{{ this.reverseGreeting }}</p>
 ```
 
