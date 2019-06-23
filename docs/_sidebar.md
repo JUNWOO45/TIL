@@ -69,6 +69,7 @@
   
 - 📂**Python**
 
+  - [파이썬 기초](/Python/python_basic.md "파이썬 기초")
   - [문자열 포맷](/python/문자열포맷.md "파이썬 문자열 포맷")
 
   
