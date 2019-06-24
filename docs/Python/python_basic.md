@@ -150,3 +150,49 @@ print(test3_str.split('a'))
 ```
 
 기본적으로 메서드 사용방법은 js와 동일한듯합니다!
+
+
+
+### docstring
+
+```
+#이거슨 주석입니다.
+'''이것도 주석입니다'''
+```
+
+
+
+### escape code
+
+```
+\n : 줄바꿈
+\t : tab
+```
+
+```
+print('junwoo')	
+//'junwoo'
+
+print('jun\nwoo')	
+//jun
+//woo
+
+print('jun\twoo')
+//jun	   woo
+```
+
+
+
+## list
+
+
+
+### append
+
+```
+my_list = []
+my_list.append('red')
+my_list.append('blue')
+print(my_list)	//['red', 'blue']
+```
+
