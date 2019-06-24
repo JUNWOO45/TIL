@@ -196,3 +196,4 @@ my_list.append('blue')
 print(my_list)	//['red', 'blue']
 ```
 
+js array의 push구나.
