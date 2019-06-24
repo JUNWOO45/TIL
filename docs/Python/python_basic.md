@@ -197,3 +197,126 @@ print(my_list)	//['red', 'blue']
 ```
 
 js array의 push구나.
+
+### del
+
+```
+del ani[2]
+
+ani	//['다람쥐', '사자']
+```
+
+### slicing
+
+```
+my_list = ['a', 'b', 'c', 'd', 'e']
+my_list[0:3]	//['a', 'b', 'c']
+my_list[2:]	//['c', 'd', 'e']
+my_list[:1]	//['a']
+```
+
+### list.sort()
+
+```
+test_list=['go', 'mama', 'abe', 'abc', 'def','ccc']
+test_list.sort()
+test_list	// ['abc', 'abe', 'ccc', 'def', 'go', 'mama']
+```
+
+이런식으로 메서드 사용하는구먼….
+
+
+
+## Tuple
+
+list와 비슷하지만 값을 변경할 수 없다!
+
+```
+my_tuple = (1, 2, 3)
+my_tuple	//(1, 2, 3)
+```
+
+괄호 없어도 tuple임.
+
+```
+my_tuple = 1, 2, 3
+my_tuple	//(1, 2, 3)
+```
+
+### Packing과 Unpacking
+
+```
+my_tuple = 1, 2, 3
+```
+
+이게 packing. 
+
+1,2,3을 my_tuple로 포장한다고 생각.
+
+```
+num1, num2, num3 = my_tuple
+
+num1	//1
+num2	//2
+num3	//3
+```
+
+이게 unpacking
+
+
+
+## for
+
+```python
+test_list=['go', 'mama', 'abe', 'abc', 'def','ccc']
+for item in test_list:
+  print(item)
+  'go'
+  'mama'
+  'abe'
+  'abc'
+  'def'
+  'ccc'
+```
+
+
+
+### range()
+
+```python
+for n in [0, 1, 2]:
+  print(n)
+
+//0, 1, 2
+```
+
+이거와 다음건 같다!
+
+```python
+for n in range(0, 3):
+  print(n)
+  
+//0, 1, 2
+```
+
+```
+for n in range(2, 6):
+	print(n)
+
+//2, 3, 4, 5
+```
+
+음.. 다음과 같을때 엄청 편하겠구나!
+
+```python
+for n in [1, 2, 3, 4, ..... 100]:
+	print(n)
+```
+
+이렇게 하지말고,
+
+```python
+for n in range(1, 101):
+	print(n)
+```
+
