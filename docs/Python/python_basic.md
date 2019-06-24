@@ -133,3 +133,20 @@ my_str[3:]	//'공부'
 //뒤의 숫자가 없으면 앞숫자부터 끝까지
 ```
 
+
+
+### string.split()
+
+```
+test_str = "web-js-python"
+test_str.split('-')	//['web', 'js', 'python']
+
+test2_str = "web js py"
+test2_str.split(' ')	//['web', 'js', 'py']
+
+test3_str = "bcabadefaghi"
+
+print(test3_str.split('a'))
+```
+
+기본적으로 메서드 사용방법은 js와 동일한듯합니다!
