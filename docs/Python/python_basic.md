@@ -320,3 +320,24 @@ for n in range(1, 101):
 	print(n)
 ```
 
+
+
+### 이중 for문
+
+```
+for i in range(1, 10):
+	print('{}x{}={}'.format(2, i, 2*i))
+```
+
+이러면 구구단 2단이 출력.
+
+```python
+for i in range(2, 10):
+  for j in range(1, 10):
+    print('{}x{}={}'.format(i, j, i*j))
+```
+
+이러면 구구단 9단까지 출력되는구나.
+
+format이 엄청 유용하네..
+
