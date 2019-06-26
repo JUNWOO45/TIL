@@ -339,5 +339,31 @@ for i in range(2, 10):
 
 이러면 구구단 9단까지 출력되는구나.
 
-format이 엄청 유용하네..
+format이 엄청 유용하네.
+
+
+
+### comprehension
+
+```
+numbers=[1,2,3,4,5,6,7,8,9]
+odd_numbers=[]
+for number in numbers:
+	if number % 2 == 1:
+		odd_numbers.append(number)
+
+print(odd_numbers);	//[1,3,5,7,9]
+```
+
+이런 식의 코드를 짤 수 있는데, 컴프리헨션을 사용하면
+
+```
+[number for number in numbers if number % 2 == 1]
+```
+
+이렇게 읽으면 되겠네요.
+
+1.number를 넣을 거다..!
+
+2.numbers를 for문 돌려서, number를 2로 나눈 나머지가 1인 number를 넣을거다!
 
