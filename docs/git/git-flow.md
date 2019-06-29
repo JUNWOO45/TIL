@@ -10,7 +10,7 @@ Git-flow에는 5가지 종류의 브랜치가 존재합니다.
 - release: 이번 출시 버전을 준비하는 브랜치
 - hotfix: 출시 버전(master)에서 발생한 버그를 수정하는 브랜치
 
-![git-flow](/Users/junwoo/Documents/study/TIL/docs/pic/git-flow.png)
+![git-flow](../pic/git-flow.png)
 
 
 
