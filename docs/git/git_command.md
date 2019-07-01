@@ -55,14 +55,6 @@ $ git push origin [branch name]
 
 
 
-branch간 이동하기
-
-```
-$ git checkout [branch name]
-```
-
-
-
 commit log 확인
 
 ```
