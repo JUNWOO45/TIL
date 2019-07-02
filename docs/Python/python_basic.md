@@ -415,3 +415,147 @@ print('hi' * 2)	// 'hihi'
 
 
 
+### 비교연산자
+
+```
+==, !=
+>, >=
+<, <=
+```
+
+### 논리연산자
+
+```
+and
+or
+not
+```
+
+### Membership 연산자
+
+```
+in
+not in
+```
+
+```
+name = ['junwoo', 'gaon', 'yeoul']
+'junwoo' in name	//True
+'hello'	not in name 	//True
+```
+
+### if
+
+```
+if 조건:
+    실행할 명령1
+    실행할 명령2
+elif 조건:
+		실행할 명령3
+		실행할 명령4
+else:
+		실행할 명령5
+```
+
+```
+name='junwoo'
+if name='junwoo':
+	print('hello')	//'hello'
+```
+
+### while
+
+```
+while 조건:
+		실행할 명령1
+		실행할 명령2
+```
+
+```
+count=0
+while count < 5:
+		print('count is : ', count)
+		count += 1
+ 
+
+count is :  0
+count is :  1
+count is :  2
+count is :  3
+count is :  4
+```
+
+### continue, break
+
+```
+while count < 10:
+		count += 1
+		if count < 4:
+				continue
+		print('count : ', count)
+		if count == 8
+			break
+			
+count :  4
+count :  5
+count :  6
+count :  7
+count :  8
+```
+
+continue는 만나면 아랫줄은 실행하지않고 다시 while문 처음으로 돌아가버리네.
+
+break는 조건 만족하면 while문을 끝내버리고.
+
+
+
+##Dictionary
+
+자바스크립트의 object네요.
+
+```
+my_dict = {}
+my_dict['name'] = 'junwoo'
+my_dict['age'] = 100
+
+print(my_dict)		//{'name': 'junwoo', 'age': 100}
+
+del my_dict['age']
+
+print(my_dict)		//{'name': 'junwoo'}
+```
+
+### method
+
+메소드는 검색해서 알아내면 되니깐… 라고 변명하며 넘어간다..!
+
+기본적인 메소드 하나 사용해보면.
+
+```
+my_dict={'name':'junwoo','age':10,'live':'dongtang'}
+
+for value in my_dict.values():
+		print(value)
+		
+		
+junwoo
+10
+dongtan
+
+for keylist in my_dict.keys():
+	print(keylist)
+	
+
+name
+age
+live
+
+for item in my_dict.items():
+	print(item)
+
+
+('name', 'junwoo')
+('age', 10)
+('live', 'dongtang')
+```
+
