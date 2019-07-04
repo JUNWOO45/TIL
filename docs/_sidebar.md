@@ -62,10 +62,11 @@
   - [git-flow란](/git/git-flow.md "git-flow")
   - [git command](/git/git_command.md "git command 정리")
   - [커밋 메시지 잘 작성하기](/git/GIT-COMMIT-메시지-잘-작성하기.md "커밋메시지 잘 작성하기")
+  - [git reflog로 hard reset하기](git/git_reflog.md "git reflog")
+  - [git 되돌리기](git/git되돌리기.md "git reset git revert")
   - [linux command](/git/linux_command.md "linux command")
   - [github에 프로젝트 등록하기](/git/git-init과git-remote-add.md)
   - [git log 시각화](/git/git_log_시각화.md "git log 시각화")
-  - [git reflog로 hard reset하기](git/git_reflog.md "git reflog")
   
   
   
@@ -87,6 +88,7 @@
   - [emmet이란](/etc/emmet이란.md "emmet이란")
   - [LESS](/etc/less.md)
   - [반응형 웹](/etc/반응형웹.md)
+  - [인프라](/etc/인프라.md)
   
   
   
