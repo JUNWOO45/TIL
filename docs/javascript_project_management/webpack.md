@@ -1,12 +1,12 @@
 # Webpack
 
-웹팩이란?
+###웹팩이란?
 
 - 서로 연관 관계가 있는 웹 자원들을 js, css, img와 같은 static한 자원으로 변환시켜주는 모듈 번들러
 
   
 
-웹팩 철학
+###웹팩 철학
 
 1. 모든 웹 자원(html, css ,js)을 모듈형태로 로딩 가능
 
@@ -19,13 +19,12 @@
 
 
 
-진행을 하면서,
+### Entry
 
-```
-$ webpack app/index.js --output dist/bundle.js --mode development
-```
+- 시작점을 설정합니다.
+- 복수의 엔트리 포인트를 설정할 수 있습니다.
 
-app/index.js는 번들링할 대상이고, dist/bundle.js는 결과물.
+### Output
 
-
+- entry에서 설정하고 묶은 파일의 결과값을 설정합니다.
 
