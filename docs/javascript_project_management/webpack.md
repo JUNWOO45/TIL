@@ -28,7 +28,32 @@
 
 - entry에서 설정하고 묶은 파일의 결과값을 설정합니다.
 
+### Loader
 
+- 기본적으로 웹팩은 자바스크립트 파일만 처리가 가능합니다.
+
+- 로더를 이용해서 다른 형태의 웹자원들(img, css, typescript, html 등)을 js로 변환하여 로딩하게 됩니다.
+
+  ```
+  module.exports = {
+  	entry: {},
+  	output: {},
+  	module: {
+  		rules: [
+  			{
+  				test: /\.css$/,
+  				use: ['style-loader', 'css-loader']
+  			}
+  		]
+  	}
+  }
+  ```
+
+  module부분을 로더라고 보면 됩니다.
+
+- 모듈은 배열의 오른쪽에서 왼쪽으로 로딩됩니다.
+
+  - 위 코드 같은 경우에는 css-loader가 먼저 로딩되고, style-loader가 로딩됩니다.
 
 ### Plugins?
 
@@ -51,7 +76,27 @@
 
 
 
-### Resolve
+### Resolve옵션
+
+```
+module.exports = {
+	mode: 'development',
+	entry: './app/index.js',
+	output: {
+		filename: 'bundle.js',
+		path: path.resolve(__dirname, 'dist')
+	},
+	resolve: {
+		alias: {
+			Vendor: path.resolve(__dirname, './app/vendor/')
+		}
+	}
+}
+```
+
+> resolve옵션은 path.resolve()와 다른것!
+>
+> 헷갈리지 말자.
 
 - config파일에 resolve를 추가해서 사용할 수 있습니다.
 
@@ -70,6 +115,16 @@
     // 위는 아래와 같습니당
     
     import Utility from 'Utilities/name'
+    ```
+
+- modules
+
+  - require() 나 import 등 모듈을 로딩할 때 어느 폴더를 기준으로 할 지 정하는 옵션입니다.
+
+    ```
+    modules: ["node_modules"]	//default
+    modules: [path.resolve(__dirname, "family/father"), "information"]
+    // family/father/information
     ```
 
     
