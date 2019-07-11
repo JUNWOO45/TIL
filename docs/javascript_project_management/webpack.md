@@ -128,3 +128,107 @@ module.exports = {
     ```
 
     
+
+
+
+## webpack 빌드를 위한 개발 서버 구성
+
+- webpack-dev-server : webpack 자체에서 제공하는 개발 서버입니다.
+- webpack-dev-middleware: 서버가 이미 구성된 경우, webpack을 미들웨어로 구성해서 서버와 연결시켜줍니다.
+
+
+
+### webpack dev server
+
+- page reload해주는 webpack 개발용 node.js 서버입니다.
+
+
+
+### 설치 및 실행
+
+- 우선 설치합니다
+
+```
+$ npm install webpack-dev-server --save-dev
+```
+
+- 설치 후 다음 명령어로 서버를 실행합니다.
+
+```
+$ webpack-dev-server --open
+```
+
+- 또는 package.json에 명령어를 등록해서 실행가능!
+
+```
+"scripts": {
+	"start": "webpack-dev-server"
+}
+```
+
+
+
+### Options
+
+- publicPath: Webpack으로 번들할 파일들이 위치하는 곳입니다.
+
+  - default값은 '/'입니다.
+
+  - **중요한 점은, 항상 '/'를 앞, 뒤에 붙여야 합니다!!**
+
+  ```
+  module.exports = {
+  	//...
+  	devServer: {
+  		publicPath: "/assets/"
+  	}
+  }
+  ```
+
+- contentBase: 서버가 로딩할 static 파일 경로를 지정합니다.
+
+  - default값은 working directory입니다.
+
+    ```
+    module.exports = {
+    	//...
+    	devServer: {
+    		//공식문서에서 절대경로를 사용하는 것을 추천한다고 하네요!
+    		contentBase: path.join(__dirname, "public")
+    	}
+    }
+    ```
+
+    ```
+    module.exports = {
+    	//...
+    	devServer: {
+    		contentBase: [path.join(__dirname, "public"), path.join(__dirname, "assets")]
+    	}
+    }
+    ```
+
+    ```
+    module.exports = {
+    	//...
+    	devServer: {
+    		//비활성화
+    		contentBase: false
+    	}
+    }
+    ```
+
+- compress: gzip압축방식을 사용해서 웹자원의 사이즈를 줄일 수 있습니다.
+
+  ```
+  module.exports = {
+    //...
+    devServer: {
+      contentBase: path.join(__dirname, 'dist'),
+      compress: true,
+      port: 9000
+    }
+  };
+  ```
+
+  
