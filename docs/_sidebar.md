@@ -14,7 +14,7 @@
   
   
   
-- 📂**Javascript Project Management**
+- 📂**Project Management**
   - [모듈, 모듈포맷, 모듈로더와 모듈번들러란](/javascript_project_management/모듈,모듈포맷,모듈로더와모듈번들러란.md "모듈번들러")
   - [빌드 시스템](/javascript_project_management/build_system.md "빌드시스템이란")
   - [npm이란](/javascript_project_management/npm.md "npm이란")
@@ -23,13 +23,6 @@
   
   
   
-- 📂**HTTP**
-
-  - [CORS](/javascript/CORS.md "cors란")
-  - [RESTful](/javascript/RESTful.md "restful이란")
-
-  
-
 - 📂**Vue**
   
   - [뷰 인스턴스](/vue/뷰인스턴스.md "뷰인스턴스")
@@ -70,8 +63,16 @@
   - [github에 프로젝트 등록하기](/git/git-init과git-remote-add.md)
   - [git log 시각화](/git/git_log_시각화.md "git log 시각화")
   
+
+
+
+- 📂**HTTP**
+
+  - [CORS](/javascript/CORS.md "cors란")
+  - [RESTful](/javascript/RESTful.md "restful이란")
+
   
-  
+
 - 📂**Python**
 
   - [파이썬 기초](/Python/python_basic.md "파이썬 기초")
