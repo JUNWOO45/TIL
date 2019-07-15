@@ -232,3 +232,29 @@ $ webpack-dev-server --open
   ```
 
   
+
+### webpack-dev-server를 테스트해봤을때,
+
+```
+$ webpack-dev-server 
+```
+
+또는
+
+```
+$ npm start //package.json의 script에 'webpack-dev-server'를 등록했다고 가정
+```
+
+을 했을 때,
+
+물리적으로 dist폴더가 생기지 않았습니다.
+
+정확하지는 않지만, in memory에 저장? 되는 식이라고 하네요.
+
+따라서 나중에 배포를 할 때는
+
+```
+$ webpack
+```
+
+을 실행해서 물리적으로(?) dist 폴더를 만들어줘야합니다.
