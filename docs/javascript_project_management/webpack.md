@@ -260,3 +260,36 @@ $ webpack
 ```
 
 을 실행해서 물리적으로(?) dist 폴더를 만들어줘야합니다.
+
+
+
+---
+
+## Webpack 명령어
+
+- webpack : 웹팩 빌드 기본 명령어
+
+- webpack -p : minification기능이 들어간 빌드(주로 배포용으로 사용)
+
+- webpack -w(--watch) : 빌드할 파일의 변화를 감지
+
+- webpack -d : sourcemap을 포함하여 빌드
+
+- webpack --display-error-details: error발생시 디버깅정보 상세출력
+
+- webpack --optimize-minimize --define process.env.NODE_ENV="'production'": 배포용
+
+  
+
+### webpack -w
+
+webpack설정에 해당하는 파일변경 발생시 자동으로 번들링을 다시 진행시키는 명령어입니다.
+
+```
+$ webpack -w
+또는
+$ webpack --watch
+```
+
+기존에 `$ webpack` 명령어만 실행했을때에는, 또 번들링을 진행하려면 `$webpack`명령어를 다시 입력해주어야했는데, -w옵션을 지정해주니깐 그러지않아도 되네여.
+
