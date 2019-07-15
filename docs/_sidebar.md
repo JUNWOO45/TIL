@@ -45,7 +45,6 @@
   - [SQL&NoSQL](/javascript/SQL&NoSQL.md "sql&nosql")
   - [MySQL](/database/MySQL.md "mysql이란")
   - [SQL복습](/database/SQL복습예제.md)
-  - [troubleshoot](/database/troubleshooting.md)
   
   
   
@@ -64,8 +63,6 @@
   - [git log 시각화](/git/git_log_시각화.md "git log 시각화")
   
 
-
-
 - 📂**HTTP**
 
   - [CORS](/javascript/CORS.md "cors란")
@@ -76,9 +73,22 @@
 - 📂**Python**
 
   - [파이썬 기초](/Python/python_basic.md "파이썬 기초")
+
   - [문자열 포맷](/python/문자열포맷.md "파이썬 문자열 포맷")
 
-  
+    
+
+- 🧩 **TroubleShoot**
+
+  - **npm**
+
+    - [npm 업데이트 안될때.](/ETC/npm이-업데이트-안될때.md "npm업데이트")
+
+  - **Database**
+
+    - [troubleshoot](/database/troubleshooting.md)
+
+    
 
 - 📂**ETC**
   
@@ -86,7 +96,6 @@
   - [마크다운 문법정리](/etc/markdown.md "마크다운 문법정리")
   - [로컬스토리지&세션스토리지&쿠키](/ETC/로컬스토리지&세션스토리지&쿠키.md "로컬스토리지 세션스토리지 쿠키")
   - [express-generator&nodemon](/ETC/express-generator&nodemon.md "nodemon적용")
-  - [npm 업데이트 안될때..](/ETC/npm이-업데이트-안될때.md "npm업데이트")
   - [VScode configuration](/ETC/configuration.md)
   - [emmet이란](/etc/emmet이란.md "emmet이란")
   - [LESS](/etc/less.md)

@@ -34,3 +34,4 @@ grant all on *.* to 'root'@'%' identified by 'password' with grant option;
 이걸로 해결.
 
 이 에러는 root가 가지고 있는 권한에 대한 문제라고 합니다.
+
