@@ -57,11 +57,11 @@
   - [git command](/git/git_command.md "git command 정리")
   - [커밋 메시지 잘 작성하기](/git/GIT-COMMIT-메시지-잘-작성하기.md "커밋메시지 잘 작성하기")
   - [git reflog로 hard reset하기](git/git_reflog.md "git reflog")
-  - [git 되돌리기](git/git되돌리기.md "git reset git revert")
+  - [git reset&git revert](git/git되돌리기.md "git reset git revert")
+  - [remote branch 가져오기](/git/git_remote_branch.md "git remote branch 가져오기")
   - [linux command](/git/linux_command.md "linux command")
   - [github에 프로젝트 등록하기](/git/git-init과git-remote-add.md)
   - [git log 시각화](/git/git_log_시각화.md "git log 시각화")
-  
 
 - 📂**HTTP**
 
