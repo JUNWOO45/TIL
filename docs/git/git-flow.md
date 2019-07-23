@@ -36,3 +36,25 @@ release브랜치에서는 QA가 이루어 집니다!
 
 QA가 모두 통과되었다면, release브랜치를 master와 develop 브랜치로 merge합니다.
 
+---
+
+## poor side of git-flow
+
+
+
+### 1. teams do not finish their jobvs at the same time.
+
+계획된 release들은 이론상으로는 좋다. 하지만 실제는 다르다.
+
+### 2. you cant know for sure that only those planned features need to go live.
+
+계획된 요청사항이 전부가 아니다.애자일한 상황에서는 더더욱.
+
+### 3. features are assumed to be independent of each other, which are not.
+
+사실상 git-flow는 독립적인 작업들을 가정하고 있는데 사실상 그렇지 못하다. 
+
+```
+poor side 출처 : http://luci.criosweb.ro/a-real-life-git-workflow-why-git-flow-does-not-work-for-us/
+```
+
