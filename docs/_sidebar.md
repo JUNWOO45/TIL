@@ -39,7 +39,10 @@
   - [vue cli install error](/ETC/vue-cli-install-error.md)
   
   
-  
+
+- 📂Angular
+  - [Angular-tutorial](/angular/angular-tutorial.md "angular tutorial")
+
 - 📂**Database**
   
   - [SQL&NoSQL](/javascript/SQL&NoSQL.md "sql&nosql")
@@ -101,8 +104,8 @@
   - [emmet이란](/etc/emmet이란.md "emmet이란")
   - [LESS](/etc/less.md)
   - [반응형 웹](/etc/반응형웹.md)
-  - [인프라](/etc/인프라.md)
-  - [gcloud deploy](/etc/gcloud_deploy.md)
+  - [인프라](/etc/인프라.md "인프라")
+  - [gcloud deploy](/etc/gcloud_deploy.md "gcloud deploy")
   
   
   
