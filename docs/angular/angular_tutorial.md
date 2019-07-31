@@ -1,6 +1,30 @@
 # angular cli
 
-##
+
+
+## 설치
+
+```
+$ npm install -g @angular/cli
+```
+
+
+
+버전확인도 함 해쥬고..
+
+```
+$ ng version
+```
+
+## 프로젝트 생성
+
+```
+$ ng new <프로젝트명>
+```
+
+
+
+##컴포넌트 생성
 
 ```
 $ ng generate component [컴포넌트 이름]
