@@ -40,8 +40,8 @@
   
   
 
-- 📂Angular
-  - [Angular-tutorial](/angular/angular-tutorial.md "angular tutorial")
+- 📂**Angular**
+  - [Angular-tutorial](/angular/angular_tutorial.md "angular tutorial")
 
 - 📂**Database**
   
