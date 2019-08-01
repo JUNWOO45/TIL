@@ -65,7 +65,8 @@
   - [linux command](/git/linux_command.md "linux command")
   - [github에 프로젝트 등록하기](/git/git-init과git-remote-add.md)
   - [git log 시각화](/git/git_log_시각화.md "git log 시각화")
-
+- [git pull 이후 non-fast-forward 해결](/git/git_pull_non-fast-forward.md "git pull 이후 non-fast-forward 해결")
+  
 - 📂**HTTP**
 
   - [CORS](/javascript/CORS.md "cors란")
