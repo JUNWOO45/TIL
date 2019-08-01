@@ -100,7 +100,7 @@
   - [마크다운 문법정리](/etc/markdown.md "마크다운 문법정리")
   - [로컬스토리지&세션스토리지&쿠키🍪](/ETC/로컬스토리지&세션스토리지&쿠키.md "로컬스토리지 세션스토리지 쿠키")
   - [express-generator&nodemon](/ETC/express-generator&nodemon.md "nodemon적용")
-  - [VScode configuration](/ETC/configuration.md)
+  - [VScode tips](/ETC/vscode_tips.md)
   - [emmet이란](/etc/emmet이란.md "emmet이란")
   - [LESS](/etc/less.md)
   - [반응형 웹](/etc/반응형웹.md)

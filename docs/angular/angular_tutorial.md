@@ -55,3 +55,19 @@ $ ng g c section/time-display
 이렇게 section 폴더 안에 time-display 폴더 생김
 
 물론 module에도 등록이 되었습니다.
+
+
+
+## 프로젝트 구조 간단하게 살펴보기
+
+### app.module.ts
+
+- 루트 모듈이라 생각하면 될 듯합니다.
+
+  근간이 되는 모듈..
+
+- `@NgModule` 안에 `declarations`, `exports`, `imports`, `providers`, `bootstrap` 등등..
+  - declarations : "하나의 컴포넌트는 적어도 하나의 모듈안에 선언되어있어야 사용가능합니다."
+  - imports: javascript module system의 그 imports.... 
+  - exports: 상동.. exports를 사용하기위해서는 그렇다면 declarations 배열에 들어있어야겠네요.
+  - bootstrap: 이 컴포넌트를 우선 시작하는듯.
