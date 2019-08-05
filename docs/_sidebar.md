@@ -41,8 +41,9 @@
   
 
 - 📂**Angular**
-  - [Angular-tutorial](/angular/angular_tutorial.md "angular tutorial")
-
+  
+- [Angular-tutorial](/angular/angular_tutorial.md "angular tutorial")
+  
 - 📂**Database**
   
   - [SQL&NoSQL](/javascript/SQL&NoSQL.md "sql&nosql")
@@ -166,4 +167,5 @@
   - [0715-0721](/til19/0715-0721.md)
   - [0722-0728](/til19/0722-0728.md)
   - [0729-0804](/til19/0729-0804.md)
+  - [0805-0811](/til19/0729-0804.md)
 
