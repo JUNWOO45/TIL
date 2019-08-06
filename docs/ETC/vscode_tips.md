@@ -87,6 +87,7 @@ Shift + Option + 마우스 드래그
 2. auto rename tag
 3. live server
 4. Path Intellisense : autocompletes filename
-5. Bracket Pair colorizer V2
+5. Bracket Pair colorizer V2 
+6. Easy less : less to css compiler
 ```
 
