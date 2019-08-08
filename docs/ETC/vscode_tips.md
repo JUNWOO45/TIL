@@ -89,5 +89,6 @@ Shift + Option + 마우스 드래그
 4. Path Intellisense : autocompletes filename
 5. Bracket Pair colorizer V2 
 6. Easy less : less to css compiler
+7. gitLens: 엄청 편리하고 신박함.
 ```
 
