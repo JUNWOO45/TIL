@@ -12,6 +12,7 @@
   - [ES2015](/javascript/ES2015.md "ES2015")
   - [조건문을 더 멋지게 작성하는 5가지 방법](/javascript/WriteBetterConditionals.md "자바스크립트 조건문")
   - [indexOf vs includes](/javascript/includes_indexof.md)
+  - [javascript class이해하기](/javascript/class.md "javascript class")
   
   
   
