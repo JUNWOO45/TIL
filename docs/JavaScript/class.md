@@ -18,8 +18,8 @@ const ex2 = class {}
 
 우선, **Object.getPrototypeOf(obj)** 의 사용법을 보면,
 
-> " 지정된 객체의 프로토타입(  [[Prototype]]  )을 return 합니다. "
-
+>" 지정된 객체의 프로토타입(  [[Prototype]]  )을 return 합니다. "
+>
 >```
 >var mother = {name: 'hahaha'};
 >
@@ -35,13 +35,15 @@ Object.getPrototypeOf(ex2);		// ƒ () { [native code] }
 
 
 
-function 과 class 모두 다 function [[Prototype]]을 return하고 있습니다.
+
+
+- function 과 class 모두 다 function [[Prototype]]을 return하고 있습니다.
 
 ![class3](../pic/js_class3.png)
 
 
 
-이 때, ex1과 ex2로 constructor instance를 생성해보면 다음과 같습니다.
+- 이 때, ex1과 ex2로 constructor instance를 생성해보면 다음과 같습니다.
 
 ![class4](../pic/js_class4.png)
 
