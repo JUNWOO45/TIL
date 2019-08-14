@@ -16,7 +16,9 @@ const ex2 = class {}
 
 
 
-우선, **Object.getPrototypeOf(obj)** 의 사용법을 보면,
+###우선, **Object.getPrototypeOf(obj)** 의 사용법을 보면,
+
+
 
 >" 지정된 객체의 프로토타입(  [[Prototype]]  )을 return 합니다. "
 >
@@ -28,6 +30,8 @@ const ex2 = class {}
 >Object.getPrototypeOf(child) === mother;	//true
 >```
 
+
+
 ```
 Object.getPrototypeOf(ex1);		// ƒ () { [native code] }
 Object.getPrototypeOf(ex2);		// ƒ () { [native code] }
@@ -37,13 +41,17 @@ Object.getPrototypeOf(ex2);		// ƒ () { [native code] }
 
 
 
-- function 과 class 모두 다 function [[Prototype]]을 return하고 있습니다.
+### function 과 class 모두 다 function [[Prototype]]을 return하고 있습니다.
+
+
 
 ![class3](../pic/js_class3.png)
 
 
 
-- 이 때, ex1과 ex2로 constructor instance를 생성해보면 다음과 같습니다.
+### 이 때, ex1과 ex2로 constructor instance를 생성해보면 다음과 같습니다.
+
+
 
 ![class4](../pic/js_class4.png)
 
@@ -55,7 +63,7 @@ Object.getPrototypeOf(ex2);		// ƒ () { [native code] }
 
 ---
 
-- es2015에서 class가 소개되기 이전엔 객체지향 디자인 패턴을 모방하기위해 **생성자 함수** 를 이용해 왔습니다.
+###es2015에서 class가 소개되기 이전엔 객체지향 디자인 패턴을 모방하기위해 **생성자 함수** 를 이용해 왔습니다.
 
 ```
 function Hero(name, hp) {
