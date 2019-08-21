@@ -11,6 +11,8 @@
   - [Recursion](/javascript/Recursion.md "recursion이란")
   - [ES2015](/javascript/ES2015.md "ES2015")
   - [조건문을 더 멋지게 작성하는 5가지 방법](/javascript/WriteBetterConditionals.md "자바스크립트 조건문")
+  - [indexOf vs includes](/javascript/includes_indexof.md)
+  - [javascript class이해하기](/javascript/class.md "javascript class")
   
   
   
@@ -41,8 +43,9 @@
   
 
 - 📂**Angular**
+  
   - [Angular-tutorial](/angular/angular_tutorial.md "angular tutorial")
-
+  
 - 📂**Database**
   
   - [SQL&NoSQL](/javascript/SQL&NoSQL.md "sql&nosql")
@@ -53,6 +56,7 @@
   
 - 📂**GIT**
   
+  - [git이 저장하는 방식](/git/git의저장방식.md "git이 저장하는 방식")
   - [git의 내부](/git/git의내부.md "git의 내부")
   - [특정파일 커밋내역에서 제외하기](/git/git_ignore.md "git ignore")
   - [계정설정](/git/계정설정.md "git 계정설정")
@@ -65,7 +69,7 @@
   - [linux command](/git/linux_command.md "linux command")
   - [github에 프로젝트 등록하기](/git/git-init과git-remote-add.md)
   - [git log 시각화](/git/git_log_시각화.md "git log 시각화")
-- [pull이후 non-fast-forward문제](/git/git_pull_non-fast-forward.md "git pull 이후 non-fast-forward 해결")
+  - [pull이후 non-fast-forward문제](/git/git_pull_non-fast-forward.md "git pull 이후 non-fast-forward 해결")
   
 - 📂**HTTP**
 
@@ -166,4 +170,7 @@
   - [0715-0721](/til19/0715-0721.md)
   - [0722-0728](/til19/0722-0728.md)
   - [0729-0804](/til19/0729-0804.md)
+  - [0805-0811](/til19/0805-0811.md)
+  - [0812-0818](/til19/0812-0818.md)
+  - [0819-0825](/til19/0819-0825.md)
 
