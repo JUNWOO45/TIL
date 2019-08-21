@@ -56,7 +56,7 @@
   
 - 📂**GIT**
   
-  - [git이 저장하는 방식](/git/git의저장방ㄱ.md "git이 저장하는 방식")
+  - [git이 저장하는 방식](/git/git의저장방식.md "git이 저장하는 방식")
   - [git의 내부](/git/git의내부.md "git의 내부")
   - [특정파일 커밋내역에서 제외하기](/git/git_ignore.md "git ignore")
   - [계정설정](/git/계정설정.md "git 계정설정")
