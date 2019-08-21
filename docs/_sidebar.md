@@ -56,6 +56,7 @@
   
 - 📂**GIT**
   
+  - [git이 저장하는 방식](/git/git의저장방ㄱ.md "git이 저장하는 방식")
   - [git의 내부](/git/git의내부.md "git의 내부")
   - [특정파일 커밋내역에서 제외하기](/git/git_ignore.md "git ignore")
   - [계정설정](/git/계정설정.md "git 계정설정")
@@ -68,6 +69,7 @@
   - [linux command](/git/linux_command.md "linux command")
   - [github에 프로젝트 등록하기](/git/git-init과git-remote-add.md)
   - [git log 시각화](/git/git_log_시각화.md "git log 시각화")
+  
 - [pull이후 non-fast-forward문제](/git/git_pull_non-fast-forward.md "git pull 이후 non-fast-forward 해결")
   
 - 📂**HTTP**
