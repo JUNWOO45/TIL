@@ -1,20 +1,3 @@
-# 0827
-
-coupon
-
-1. sid
-
-   ```
-   $ uuidgen
-   ```
-
-2. name, description
-   mode 1->public / 2->private
-
-
-
-# 0829
-
 # CSS Architecture
 
 
@@ -26,7 +9,7 @@ coupon
 
 
 
-###Block(전체를 감싸고 있는 블럭요소)
+### Block(전체를 감싸고 있는 블럭요소)
 
 - 독립적으로 의미가 있는 컴포넌트를 의미합니다.
 
@@ -38,13 +21,13 @@ coupon
 
 - header, footer, nav, main등의 컨텐츠 영역을 block으로 간주할 수 있습니다.
 
-  ![bem1](../pic/css_architecture1.jpeg)
+  ![bem1](/Users/junwoo/Documents/study/TIL/docs/pic/css_architecture1.jpeg)
 
   
 
 - 더 구체적으로, header block은 logo block, search form block, authorization block을 포함할 수 있습니다.
 
-  ![bem1](../pic/css_architecture3.png)
+  ![bem1](/Users/junwoo/Documents/study/TIL/docs/pic/css_architecture3.png)
 
 - block은 클래스의 어근을 형성하고, 항상 맨 앞에 위치합니다.
 
@@ -64,7 +47,7 @@ coupon
 - 예를 들어 위에서 보았던 block이미지에서, menu item은 menu block 바깥에서는 사용될 수 없습니다.
   따라서 각각의 메뉴아이템은 element입니다.
 
-![bem1](../pic/css_architecture4.png)
+![bem1](/Users/junwoo/Documents/study/TIL/docs/pic/css_architecture4.png)
 
 - 두개의 underscore로 연결하여 블럭 다음에 위치시킵니다.
 
@@ -110,7 +93,7 @@ coupon
 
 - 다음처럼 focused된 tab3를 modifiers라고 볼 수 있습니다.
 
-![bem1](../pic/css_architecture5.png)
+![bem1](/Users/junwoo/Documents/study/TIL/docs/pic/css_architecture5.png)
 
 
 
@@ -118,7 +101,7 @@ coupon
 
 - 다음과 같은 버튼을 만든다고 하면,
 
-![bem1](../pic/css_architecture2.jpeg)
+![bem1](/Users/junwoo/Documents/study/TIL/docs/pic/css_architecture2.jpeg)
 
 ```html
 <button class="button">

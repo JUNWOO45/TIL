@@ -1,5 +1,4 @@
 <h1>- KT소프트웨어 개발 전략 및 방향</h1>
-
 ### 역량강화
 
 ### pre made framework
