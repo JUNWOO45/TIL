@@ -62,11 +62,11 @@
 
 
     - Reverse Proxy
-
+    
       동일 출처 정책(Same Origin Policy)은 <u>"브라우저"</u> 의 보안정책이기 때문에 Backend영역은 이 제약에서 자유롭습니다.
-
+    
       실제 서버와 클라이언트 사이에 별도의 Proxy서버를 두고, 이 Proxy서버를 이용해서 요청을 주고 받는 방식입니다.
-
+    
       별도의 서버를 구축해야하고 추가적인 네트워크 요청이 발생한다는것이 단점입니다.
 
   - 
@@ -76,15 +76,14 @@
 - 그래서 CORS가 뭔데?
 
   - <h4>CORS는 기술이 아니라, 크로스 도메인 요청에대한 표준입니다.</h4>
-
-    웹브라우저에서 외부 도메인 서버와 통신하기위한 방식을 표준화한 스펙이죠.
-
-  - 크로스 도메인 이슈를 해결하는 표준이 없던 시절에는 JSONP, Reverse Proxy등을 이용해서 우회적으로 동일 출처 정책을 해결했습니다.
-
-    그러다가 2006년 W3C가 크로스 도메인 이슈를 해결하는 표준을 만들기 위한 논의를 시작하여 2013년 12월 CORS공식 권고안이 발표되었습니다!
-
-  - 참고로, Cross Origin Resource Sharing의 약자입니다.
-
+웹브라우저에서 외부 도메인 서버와 통신하기위한 방식을 표준화한 스펙이죠.
+    
+- 크로스 도메인 이슈를 해결하는 표준이 없던 시절에는 JSONP, Reverse Proxy등을 이용해서 우회적으로 동일 출처 정책을 해결했습니다.
+  
+  그러다가 2006년 W3C가 크로스 도메인 이슈를 해결하는 표준을 만들기 위한 논의를 시작하여 2013년 12월 CORS공식 권고안이 발표되었습니다!
+  
+- 참고로, Cross Origin Resource Sharing의 약자입니다.
+  
 - 왜 CORS가 필요할까?
 
   - 정상적인 상황이라면 문제되지 않습니다.
@@ -108,60 +107,59 @@
 
 
 
-  - simple request
+simple request
 
-    기존 데이터에 사이드 이펙트를 일으키지 않는 GET, HEAD, POST요청을 simple request라고 합니다.
+기존 데이터에 사이드 이펙트를 일으키지 않는 GET, HEAD, POST요청을 simple request라고 합니다.
 
-    (POST요청의 경우, 서버로 전송하는 Contet-Type이 application/x-www-form-urlencoded, multipart/form-data, text/plain 중에 하나여야 합니다. 이땐 HTTP요청에 커스텀 헤더를 지정하지 않습니다.)
+(POST요청의 경우, 서버로 전송하는 Contet-Type이 application/x-www-form-urlencoded, multipart/form-data, text/plain 중에 하나여야 합니다. 이땐 HTTP요청에 커스텀 헤더를 지정하지 않습니다.)
 
-    ```
-    var xhr = new XMLHttpRequest();
-    var url = "http://example.com/resources/users/";
+```
+var xhr = new XMLHttpRequest();
+var url = "http://example.com/resources/users/";
+
+function simpleRequest() {
+    xhr.open("GET", url);
+    xhr.onreadystatechange = function() {
+        //..
+    };
+    xhr.send();
+}
+```
+
+preflight request(사전 요청)
+
+GET, HEAD, POST이외의 메소드를 이용한 요청의 경우에는 데이터에 사이드 이펙트를만들 수 있기 때문에 브라우저는 preflight요청을 먼저 서버로 전송합니다.
+
+(POST요청이지만 Content-Type이 application/x-www-form-urlencoded, multipart/form-data, text/plain이 아닌 경우도 여기에 해다합니다. 이때에는 커스텀 헤더를 설정해야합니다.)
+
+```
+var xhr = new XMLHttpRequest();
+var url = "http://example.com/resources/users/";
+var body = "<?xml version="1.0"?><user><name>Junwoo</name></user>;
+
+function preflightedRequest() {
+    xhr.open("POST", url);
     
-    function simpleRequest() {
-        xhr.open("GET", url);
-        xhr.onreadystatechange = function() {
-            //..
-        };
-        xhr.send();
-    }
-    ```
-
-
-  -  preflight request(사전 요청)
-
-    GET, HEAD, POST이외의 메소드를 이용한 요청의 경우에는 데이터에 사이드 이펙트를만들 수 있기 때문에 브라우저는 preflight요청을 먼저 서버로 전송합니다.
-
-    (POST요청이지만 Content-Type이 application/x-www-form-urlencoded, multipart/form-data, text/plain이 아닌 경우도 여기에 해다합니다. 이때에는 커스텀 헤더를 설정해야합니다.)
-
-    ```
-    var xhr = new XMLHttpRequest();
-    var url = "http://example.com/resources/users/";
-    var body = "<?xml version="1.0"?><user><name>Junwoo</name></user>;
+    xhr.setRequestHeader("X-Custom-Header", "hello");	//커스텀 헤더 설정
     
-    function preflightedRequest() {
-        xhr.open("POST", url);
-        
-        xhr.setRequestHeader("X-Custom-Header", "hello");	//커스텀 헤더 설정
-        
-        xhr.setRequestHeader("Content-Type", "application/xml");	//Post요청이지만 Content-Type에 의해 preflighted request입니다.
-        
-        xhr.onreadystatechange = function() {
-            //..
-        }
-        
-        xhr.send(body);
+    xhr.setRequestHeader("Content-Type", "application/xml");	//Post요청이지만 Content-Type에 의해 preflighted request입니다.
+    
+    xhr.onreadystatechange = function() {
+        //..
     }
-    ```
+    
+    xhr.send(body);
+}
+```
 
 
 
     preflight요청은 실제로 요청하려는 경로와 같은 url에 대해 OPTIONS메서드 요청을 미리 날려보고 요청을 할 수 있는 권한이 있는지 확인합니다.
-
+    
     - preflight request결과, 허용이 되지않는다면!
-
+    
       브라우저는 서버가 보낸 Response벙보를 이용하여 허용되지 않은 요청인 경우 405 Method Not Allowed에러를 발생시키고, 실제 페이지의 요청은 서버로 전송하지 않습니다.
-
+    
     - preflight request결과, 허용된 요청인 경우엔 전송을 합니다!
 
 

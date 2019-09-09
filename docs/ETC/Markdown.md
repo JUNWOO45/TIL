@@ -69,7 +69,6 @@
 ```
 
 <pre>Preformatted text</pre>
-
 ```
 <pre>Preformatted text</pre>
 ```
@@ -254,20 +253,5 @@ HTML unicode utf-8을 사용해서 여러 버튼들을 표시할 수 있습니�
 ```
 
 여기서 이모지목록을 확인할 수 있습니다 : [이모지 치트시트](https://www.webfx.com/tools/emoji-cheat-sheet/)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
