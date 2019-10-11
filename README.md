@@ -1,5 +1,7 @@
 <h1>Today I Learned!</h1>
-[![HitCount](http://hits.dwyl.io/junwoo45/til.svg)](http://hits.dwyl.io/junwoo45/til)
+[![HitCount](http://hits.dwyl.io/JUNWOO45/TIL.svg)](http://hits.dwyl.io/JUNWOO45/TIL)
+---
+
 
 공부하고 의미있게 느낀 내용들을 매일 적는 저장소입니다.
 
@@ -7,7 +9,7 @@
 
 [https://junwoo45til.netlify.com/#/](https://junwoo45til.netlify.com/#/) 에서 확인해 볼 수 있습니다!
 
-
+<br>
 
 ## TODO
 
