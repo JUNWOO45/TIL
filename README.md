@@ -1,5 +1,5 @@
 <h1>Today I Learned!</h1>
-![HitCount](http://hits.dwyl.io/junwoo45/TIL.svg)](http://hits.dwyl.io/junwoo45/TIL)
+[![HitCount](http://hits.dwyl.io/junwoo45/til.svg)](http://hits.dwyl.io/junwoo45/til)
 
 공부하고 의미있게 느낀 내용들을 매일 적는 저장소입니다.
 
