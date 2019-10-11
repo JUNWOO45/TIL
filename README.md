@@ -11,9 +11,9 @@
 
 ## TODO
 
-[] 트러블 슈팅 히스토리를 쉽게 찾기위해 검색기능 추가
+- [ ] 트러블 슈팅 히스토리를 쉽게 찾기위해 검색기능 추가
 
-[] 최신 TIL을 상단으로 올리기위해 sidebar 순서 조정
+- [ ] 최신 TIL을 상단으로 올리기위해 sidebar 순서 조정
 
 <img width="1678" alt="스크린샷1" src="https://user-images.githubusercontent.com/40589483/58746809-9b322f00-849d-11e9-9c81-406612f1e369.png">
 
