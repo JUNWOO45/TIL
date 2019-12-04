@@ -77,6 +77,12 @@
 
   
 
+  📂**TypeScript**
+
+  - [Classes](/typescript/classes.md)
+
+  
+
   📂**블로그에서 이동**
 
   - [2019-06-04-vue1_instance](/deleted_post/2019-06-04-vue1_instance.md)
