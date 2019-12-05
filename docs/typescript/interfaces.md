@@ -110,3 +110,35 @@ printObj(targetObj);
 
 
 정말 편하다.
+
+---
+
+## Readonly Properties
+
+```types
+interface Point {
+    readonly x: number;
+    readonly y: number;
+}
+
+let p1: Point = { x: 10, y: 20 };
+p1.x = 5;
+// Cannot assign to 'x' because it is a read-only property.
+```
+
+할당 후, x와 y는 바꿀 수 없습니다.
+
+
+
+
+
+
+
+---
+
+## References
+
+- https://www.typescriptlang.org/docs/handbook/interfaces.html
+- https://typescript-kr.github.io/pages/Interfaces.html
+- https://poiemaweb.com/typescript-interface
+
