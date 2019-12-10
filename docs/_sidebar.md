@@ -1,5 +1,6 @@
 - 📝**TIL2019**
   
+  - [1209-1215](/til19/1209-1215.md)
   - [1202-1208](/til19/1202-1208.md)
   - [1125-1201](/til19/1125-1201.md)
   - [1118-1124](/til19/1118-1124.md)
@@ -81,6 +82,7 @@
 
   - [Classes](/typescript/classes.md)
   - [Interfaces](/typescript/interfaces.md)
+  - [Functions](/typescript/functions.md)
 
   
 
