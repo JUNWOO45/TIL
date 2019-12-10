@@ -80,6 +80,7 @@
 
   📂**TypeScript**
 
+  - [Types](/typescript/types.md)
   - [Classes](/typescript/classes.md)
   - [Interfaces](/typescript/interfaces.md)
   - [Functions](/typescript/functions.md)
