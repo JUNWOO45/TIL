@@ -88,33 +88,7 @@
   - [Interfaces](/typescript/interfaces.md)
   - [Functions](/typescript/functions.md)
 
-  
-
-  📂**블로그에서 이동**
-
-  - [2019-06-04-vue1_instance](/deleted_post/2019-06-04-vue1_instance.md)
-
-  - [2019-06-04-vue2_comonent](/deleted_post/2019-06-04-vue2_component.md)
-
-  - [2019-06-04-vue3_router](/deleted_post/2019-06-04-vue3_router.md)
-
-  - [2019-06-04-vue4_databinding](/deleted_post/2019-06-05-vue4_databinding.md)
-
-  - [2019-06-04-vue5_template](/deleted_post/2019-06-05-vue5_template.md)
-
-  - [2019-06-04-vue6_classbinding](/deleted_post/2019-06-05-vue6_classbinding.md)
-
-  - [2019-06-04-vue7_singlefilecomponent](/deleted_post/2019-06-06-vue7_singlefilecomponent.md)
-
-  - [2019-06-04-vue1_instance](/deleted_post/2019-06-04-vue1_instance.md)
-
-  - [2019-06-04-vue8_cli](/deleted_post/2019-06-06-vue8_cli.md)
-
-  - [2019-06-04-vue9_loader](/deleted_post/2019-06-06-vue9_loader.md)
-
-  - [2019-06-04-vue10_async](/deleted_post/2019-06-07-vue10_async.md)
-
-  - [2019-06-04-vue11_vuex](/deleted_post/2019-06-07-vue11_vuex.md)
+  - [Reactive Forms](/typescript/reactive_forms.md)
 
     
 
