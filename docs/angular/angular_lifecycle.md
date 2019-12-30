@@ -47,3 +47,20 @@
 하지만 `ngDoCheck` 는 obj.property가 바뀌어도 검사함.
 
 > 게다가 doCheck는 @Input처럼 데코레이터가 안달려도 검사하는것같다!?
+
+
+
+---
+
+간단한 정리가 있어서 기록으로 남긴다.
+
+```
+constructor : 가장 먼저.
+ngOnChanges : 최초 초기화될때 + Input프로퍼티가 변경될 때
+-> Input 데코레이터가 사용된 프로퍼티가 없으면 실행되지 않음.
+ngDoCheck : 모든 데이터 변경을 감지
+ngOnInit : 프로퍼티가 초기화된 직후
+ngAfterViewInit : 템플릿이 모두 초기화되었을때
+ngAfterViewChecked : 템플릿에 바인딩된 값이 변경되었을 때
+```
+

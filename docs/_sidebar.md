@@ -79,32 +79,22 @@
 
   
 
-  [**📂읽을 아티클 queue**](/blog_backup/아티클저장소.md)
+- [**📂To Read List**](/blog_backup/아티클저장소.md)
 
-  
+- 📂**TypeScript**
 
-  📂**TypeScript**
-  
   - [TypeScript Compiler](/typescript/tsc_compiler.md)
   - [Types](/typescript/types.md)
   - [Classes](/typescript/classes.md)
-- [Interfaces](/typescript/interfaces.md)
+  - [Interfaces](/typescript/interfaces.md)
   - [Functions](/typescript/functions.md)
-
   - [Reactive Forms](/typescript/reactive_forms.md)
 
-  
-
-  
 - 📂**Angular**
 
-  
-
   - [라이프사이클](/angular/angular_lifecycle.md)
-
   
-
-  📂**Javascript**
+- 📂**Javascript**
 
   - [객체지향 프로그래밍](/javascript/객체지향프로그래밍.md "자바스크립트 객체지향프로그래밍")
   - [자바스크립트의 함수](/javascript/자바스크립트의함수.md "자바스크립트 함수")
