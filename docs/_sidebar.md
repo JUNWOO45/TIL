@@ -77,21 +77,32 @@
   - [0902-0909](/til18/0902-0909.md)
   - [0831-0901](/til18/0831-0901.md)
 
+  
+
   [**📂읽을 아티클 queue**](/blog_backup/아티클저장소.md)
 
   
 
   📂**TypeScript**
-
+  
   - [TypeScript Compiler](/typescript/tsc_compiler.md)
   - [Types](/typescript/types.md)
   - [Classes](/typescript/classes.md)
-  - [Interfaces](/typescript/interfaces.md)
+- [Interfaces](/typescript/interfaces.md)
   - [Functions](/typescript/functions.md)
 
   - [Reactive Forms](/typescript/reactive_forms.md)
 
-    
+  
+
+  
+- 📂**Angular**
+
+  
+
+  - [라이프사이클](/angular/angular_lifecycle.md)
+
+  
 
   📂**Javascript**
 
@@ -137,10 +148,6 @@
   
   
 
-- 📂**Angular**
-  
-  - [Angular-tutorial](/angular/angular_tutorial.md "angular tutorial")
-  
 - 📂**Database**
   
   - [SQL&NoSQL](/javascript/SQL&NoSQL.md "sql&nosql")
