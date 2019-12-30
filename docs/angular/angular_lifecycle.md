@@ -10,7 +10,9 @@
 
 
 
-비슷하다고 느낄수 있는 **ngOnInit** 은 생명주기 훅.
+## ngOnInit
+
+`constructor` 와 비슷하다고 느낄수 있는 **ngOnInit** 은 생명주기 훅.
 
 순수하게 앵귤러가 컴포넌트 초기화를 완료했다는 의미를 가진다.
 
@@ -19,3 +21,29 @@
 예를 들어 `@Input()` 데코레이터를 사용하는 경우,
 
 `Input()` 프로퍼티는 `ngOnInit` 안에서 접근 가능/ `constructor` 에서는 undefined.
+
+
+
+## ngOnChanges
+
+`ngOnChanges` 도 최초에 동작하는구나.
+
+아마 undefined에서 값이 할당될 때 동작하는듯ㅇㅇ
+
+> ㄴㄴ.데코레이터가 달린 경우에만 불리움.
+>
+> 그 이유는, ngOnChanges는 상위에서 자신에게로 데이터가 들어올 때만 동작하는 라이프사이클임.
+
+
+
+## ngDoCheck
+
+기본적으로 `ngOnChanges` 와 같은 동작을 함.
+
+근데 결정적이면서 엄청 중요한 차이
+
+`ngOnChanges` 는 값이 완전히 바뀔때만 검사.
+
+하지만 `ngDoCheck` 는 obj.property가 바뀌어도 검사함.
+
+> 게다가 doCheck는 @Input처럼 데코레이터가 안달려도 검사하는것같다!?
