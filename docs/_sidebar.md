@@ -93,6 +93,7 @@
 - 📂**Angular**
 
   - [라이프사이클](/angular/angular_lifecycle.md)
+  - [디렉티브](/angular/directive.md)
   
 - 📂**Javascript**
 
