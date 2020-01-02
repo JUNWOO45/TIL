@@ -2,6 +2,8 @@
 
 
 
+## 기본
+
 - RouterModule import.
 
   - import { RouterModule, Route  } from '@angular/router';
@@ -26,6 +28,26 @@
 
   - ```html
     <router-outlet></router-outlet>
+    ```
+
+<br>
+
+## a 태그를 사용
+
+- a태그의 attribute directive를 사용한다. (routerLink) 
+
+```
+<a routerLink="/"> 홈 </a>
+```
+
+
+
+- routerLinkActive
+
+  - url이 일치하면, class를 부여
+
+  - ```
+    <a routerLink="signup" routerLinkActive="highlight">
     ```
 
     
