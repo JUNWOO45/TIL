@@ -46,8 +46,19 @@
 
   - url이 일치하면, class를 부여
 
-  - ```
+    ```
     <a routerLink="signup" routerLinkActive="highlight">
     ```
 
-    
+  
+
+- routerLinkActiveOptions
+
+  - "/" 같은 경우, 다른 주소에서도 동작해버리니깐, 주소가 똑같을때에만 동작하도록..
+  - ex) === 같은 느낌.
+
+  ```html
+  <a routerLink="/" routerLinkActive="green" [routerLinkActiveOptions]="{exact: true}">홈</a>
+  ```
+
+  
