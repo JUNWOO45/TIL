@@ -61,12 +61,60 @@
   <a routerLink="/" routerLinkActive="green" [routerLinkActiveOptions]="{exact: true}">홈</a>
   ```
 
-  
 
-## 라우터에서 parameter 사용하기
+
+## a 태그 사용하지않고 라우팅 이용하기
+
+- 사용하려는 컴포넌트에서 Router 서비스 주입
+- 주입된 서비스의 navagate 함수 호출하기
+
+```typescript
+id;
+
+constructor(private route: ActivateRoute, private router: Router) {}
+
+ngOnInit() {
+  this.url = this.route.snapshot.queryParamMap.get('id');
+}
+
+click() {
+  setTimeout(() => {
+    this.router.navigate([this.id || '']);
+  })
+}
+```
+
+
+
+
+
+## 동적라우팅
+
+### - 라우터에서 parameter 사용하기
 
 - Routes에 `:id` 처럼 설정
 - 사용하는 컴포넌트에서 ActivatedRoute 서비스 주입
 - 주입된 서비스를 이용해서 `:id` 가져오기
   - 동기 : snapshot
   - 비동기: rx
+
+```typescript
+this.name = this.route.snapshot.paramMap.get('name');
+```
+
+```typescript
+this.route.paramMap.subscribe(el => {
+  this.name = el.get('name');
+});
+```
+
+
+
+### - QueryParams 설정 및 컴포넌트에서 사용하는 방법
+
+- Routes에서는 설정 필요없음.
+- 사용하려는 컴포넌트에서 ActivatedRoute 서비스 주입
+- 주입된 서비스의 queryParamMap을 이용해서 query 겟또.
+  - 동기 : snapshot
+  - 비동기: rx
+
