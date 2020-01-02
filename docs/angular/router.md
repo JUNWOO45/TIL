@@ -62,3 +62,11 @@
   ```
 
   
+
+## 라우터에서 parameter 사용하기
+
+- Routes에 `:id` 처럼 설정
+- 사용하는 컴포넌트에서 ActivatedRoute 서비스 주입
+- 주입된 서비스를 이용해서 `:id` 가져오기
+  - 동기 : snapshot
+  - 비동기: rx
