@@ -84,18 +84,13 @@ export class HomeService {
 
 ---
 
-반대로, 모듈 안에 서비스 프로바이더를 등록하는 방법도 있습니다.
+컴포넌트 안에 서비스 프로바이더를 등록하는 방법도 있습니다.
 
 ```typescript
-import { NgModule } from '@angular/core';
-
-import { UserService } from './user.service';
-
-@NgModule({
-  providers: [UserService],
+@Component({
+/* . . . */
+  providers: [UserService]
 })
-export class UserModule {
-}
 ```
 
 
@@ -105,6 +100,14 @@ export class UserModule {
 이러면 NgModule의 프로바이더와는 별개로, 컴포넌트 프로바이더가 의존성 객체를 생성합니다.
 
 즉, 서비스의 인스턴스가 각각 생성되어서 이 서비스를 사용해 어떤 동작을 하더라도 같은 서비스를 사용하는 다른 컴포넌트는 영향을 받지 않습니다.
+
+
+
+---
+
+### 결론
+
+- 컴포넌트에 프로바이더를 설정해주는 것과 모듈에서 프로바이더를 설정해주는 것이 어떤 차이가 있는지 이해하면 될 듯하다.
 
 
 
