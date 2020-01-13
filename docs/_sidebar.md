@@ -106,6 +106,7 @@
 - 📂**RxJS**
 
   - [Iterable](/RxJS/iterable.md)
+  - [Observable](/RxJS/observable.md)
 
 - 📂**Javascript**
 
