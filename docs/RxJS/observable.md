@@ -164,8 +164,23 @@ new Observable(observer => {
   complete() {
     console.log('is completed');
   }
-})
+});
+```
 
 
+
+`subscribe ` 에 지금처럼 `옵저버 객체` 를 전달할 수 도 있지만, 순서대로 next, error, complete 콜백을 넣어도 된다.
+
+```typescript
+new Observable(observer => {
+  observer.next(123123);
+  observer.complete();
+}).subscribe(value => {
+  console.log(value);
+}, error => {
+  console.error(error);
+}, () => {
+  console.log('is completed');
+});
 ```
 
