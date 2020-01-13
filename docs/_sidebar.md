@@ -212,6 +212,7 @@
   - [로컬스토리지&세션스토리지&쿠키🍪](/ETC/로컬스토리지&세션스토리지&쿠키.md "로컬스토리지 세션스토리지 쿠키")
   - [express-generator&nodemon](/ETC/express-generator&nodemon.md "nodemon적용")
   - [VScode tips](/ETC/vscode_tips.md)
+  - [터미널 팁](/ETC/terminal_tips.md)
   - [emmet이란](/etc/emmet이란.md "emmet이란")
   - [LESS](/etc/less.md)
   - [반응형 웹](/etc/반응형웹.md)
