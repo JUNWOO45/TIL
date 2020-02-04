@@ -89,6 +89,8 @@
 
 - [**📂To Read List**](/blog_backup/아티클저장소.md)
 
+- [**📂To Make List**](/ETC/to_make_list.md)
+
 - 📂**TypeScript**
 
   - [TypeScript Compiler](/typescript/tsc_compiler.md)
