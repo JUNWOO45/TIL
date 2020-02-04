@@ -106,7 +106,7 @@
   - [라우터](/angular/router.md)
   - [서비스](/angular/service.md)
   - [Angular Material](/angular/angular_material.md)
-  - [의존성 주입](/angular/dependency_injection.md)
+  - [Injectable](/angular/injectable.md)
   
 - 📂**RxJS**
 
