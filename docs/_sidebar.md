@@ -100,7 +100,7 @@
   - [Classes](/typescript/classes.md)
   - [Interfaces](/typescript/interfaces.md)
   - [Functions](/typescript/functions.md)
-  - [Reactive Forms](/typescript/reactive_forms.md)
+  - [타입 단언](/typescript/type_assertions.md)
 
 - 📂**Angular**
 
@@ -111,6 +111,7 @@
   - [서비스](/angular/service.md)
   - [Angular Material](/angular/angular_material.md)
   - [Injectable](/angular/injectable.md)
+  - [Reactive Forms](/typescript/reactive_forms.md)
   
 - 📂**RxJS**
 
