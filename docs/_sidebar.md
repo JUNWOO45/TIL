@@ -113,7 +113,7 @@
   - [Angular Material](/angular/angular_material.md)
   - [Injectable](/angular/injectable.md)
   - [Reactive Forms](/typescript/reactive_forms.md)
-  - [Angular Universal](/typescript/angular_universal.md)
+  - [Angular Universal](/angular/angular_universal.md)
   
 - 📂**RxJS**
 
