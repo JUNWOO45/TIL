@@ -1,4 +1,6 @@
-# 0304
+# innerHTML바인딩할 때 스타일이 적용안되는 문제
+
+
 
 innerHTML 속성으로 바인딩 할 경우, 스타일이나 클래스가 사라지는 현상이 생겼다.
 
@@ -12,6 +14,10 @@ innerHTML 속성으로 바인딩 할 경우, 스타일이나 클래스가 사라
 
 그래서 이 방법으로 수정.
 
+`DomSanitizer` 를 사용하는 방법인데, 얘는 Cross Site Scripting Security bugs (XSS) 를 방지해준다.
+
+보안을 위한 설정이기때문에 마구잡이로 사용해서는 안될듯하다.
+
 https://stackoverflow.com/questions/50183294/angular-add-style-tag-into-innerhtml
 
 
@@ -20,49 +26,3 @@ Ref
 
 -  [https://blog.eunsatio.io/develop/Angular-2%2B-innerHTML%EC%97%90%EC%84%9C-%EC%9D%B8%EB%9D%BC%EC%9D%B8-%EC%8A%A4%ED%83%80%EC%9D%BC%EC%9D%B4-%EC%97%86%EC%96%B4%EC%A7%88-%EB%95%8C](https://blog.eunsatio.io/develop/Angular-2%2B-innerHTML에서-인라인-스타일이-없어질-때)
 - https://stackoverflow.com/questions/50183294/angular-add-style-tag-into-innerhtml
-
-
-
-# 0305
-
-구조분해할당을 자주 안쓰는듯하다.
-
-정말 간만에 사용...
-
-```typescript
-const activities = [
-  {
-    type: 1,
-    name: 'junwoo'
-	},
-  {
-    type: 2,
-    name: 'yeoul'
-	},
-  {
-    type: 3,
-    name: 'gaon'
-	},
-];
-
-const result = [];
-
-for(let {type} of activities) {
-  result.push(type);
-}
-
-console.log(result);	//[1, 2, 3]
-```
-
-좀 더 좋은 방법을 찾아보면 좋을텐데... 뭐가 있을까?
-
-```typescript
-let result = [];
-
-for(let {type} of activities) {
-  result = [...result, type];
-}
-
-console.log(result);	//[1, 2, 3]
-```
-
