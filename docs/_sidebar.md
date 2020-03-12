@@ -163,6 +163,7 @@
 
 
 - 📂**CSS**
+  - [animation](/css/animation.md)
   - [transition](/css/transition.md)
   - [transform](/css/transform.md)
 
