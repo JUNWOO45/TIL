@@ -1,31 +1,3 @@
-# 0316
-
-```
-2013, 'Lost connection to MySQL server during query ([Errno 54] Connection reset by peer)
-```
-
-MySQL 작업을 할 때, 오래걸리는 read 작업 시 이런 에러가 생겼다.
-
-```
-SHOW VARIABLES LIKE '%timeout%';
-```
-
-timeout관련된 설정파일들이 나온다.
-
-```
-SET GLOBAL net_read_timeout = 31536000;
-```
-
-`net_read_timeout` 을 엄청 늘려주었다.
-
-그리고 시퀄프로를 다시 껐다키면 적용완료.
-
-
-
-# 0317
-
-
-
 # Generic
 
 ```typescript

@@ -104,7 +104,8 @@
   - [Classes](/typescript/classes.md)
   - [Interfaces](/typescript/interfaces.md)
   - [Functions](/typescript/functions.md)
-  - [타입 단언](/typescript/type_assertions.m)
+  - [타입 단언](/typescript/type_assertions.md)
+  - [제네릭](/typescript/generics.md)
 
 - 📂**Angular**
 
