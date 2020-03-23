@@ -129,6 +129,7 @@
 
 - 📂**Javascript**
 
+  - [클로져](/javascript/클로져.md)
   - [이벤트 위임](/javascript/이벤트위임.md)
   - [호이스팅](/javascript/호이스팅.md)
   - [객체지향 프로그래밍](/javascript/객체지향프로그래밍.md "자바스크립트 객체지향프로그래밍")
