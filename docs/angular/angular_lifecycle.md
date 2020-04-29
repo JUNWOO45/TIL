@@ -22,17 +22,19 @@
 
 `Input()` 프로퍼티는 `ngOnInit` 안에서 접근 가능/ `constructor` 에서는 undefined.
 
+> it is called only once when the component is loaded into the DOM.
+
 
 
 ## ngOnChanges
 
-`ngOnChanges` 도 최초에 동작하는구나.
+`@Input` 이 있는 경우, `ngOnChanges()`가 `ngOnInit()`보다 먼저 실행된다.
 
-아마 undefined에서 값이 할당될 때 동작하는듯ㅇㅇ
-
-> ㄴㄴ.데코레이터가 달린 경우에만 불리움.
+> This lifecycle hook is called before ngOnInit() and whenever there is a change in the input properties.
 >
-> 그 이유는, ngOnChanges는 상위에서 자신에게로 데이터가 들어올 때만 동작하는 라이프사이클임.
+> It is called every time the data changes.
+
+
 
 
 
@@ -47,6 +49,28 @@
 하지만 `ngDoCheck` 는 obj.property가 바뀌어도 검사함.
 
 > 게다가 doCheck는 @Input처럼 데코레이터가 안달려도 검사하는것같다!?
+
+
+
+## ngOnDestroy
+
+> This is the best place to unsubscribe all the subscriptions and detach any event handlers to avoid memory leaks.
+
+
+
+## - Lifecycle methods with component's view
+
+---
+
+## ngAfterViewInit
+
+> called once view and all other child views are loaded
+
+<br>
+
+## ngAfterViewChecked
+
+> called once after ngAfterViewInit and everytime after ngDoCheck()
 
 
 
