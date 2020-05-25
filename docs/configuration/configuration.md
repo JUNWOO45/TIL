@@ -4,6 +4,38 @@
 
 ## iTerm2
 
+### 1-0 설치
+
+[https://www.iterm2.com/](https://www.iterm2.com/)
+
+### 1-1 brew설치
+
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+### 1-2 zsh 설치
+
+```
+brew install zsh
+```
+
+### 1-3 oh my ZSH 설치
+
+```
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+
+### 1-4 agnoster 테마 설치
+
+```
+vim ~/.zshrc
+
+ZSH_THEME="robyrussell" -> ZSH_THEME="agnoster"
+```
+
+
+
 ### - command + 좌우화살표 / option + 좌우화살표로 단어 사이 옮겨다니기
 
 ```
