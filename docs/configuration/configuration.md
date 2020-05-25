@@ -53,6 +53,34 @@ vim ~/.zshrc
 ZSH_THEME="robyrussell" -> ZSH_THEME="agnoster"
 ```
 
+### 1-5 폰트 변경
+
+[https://github.com/naver/d2codingfont](https://github.com/naver/d2codingfont) 들어가서 폰트 다운로드
+
+압축풀고 폰트 더블클릭 후, '서체 설치' 눌러서 설치.
+
+참고 : [https://m.blog.naver.com/PostView.nhn?blogId=lxxjxxx&logNo=221181233993&proxyReferer=https:%2F%2Fwww.google.com%2F](https://m.blog.naver.com/PostView.nhn?blogId=lxxjxxx&logNo=221181233993&proxyReferer=https:%2F%2Fwww.google.com%2F)
+
+Preference > Profile > Text에서 D2Coding폰트 적용 및 13pt로 폰트크기 변경
+
+### 1-6 macbook-pro부분 삭제
+
+```
+vim ~/.zshrc
+```
+
+들어가서,
+
+```
+prompt_context() {
+  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
+    prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
+  fi
+}
+```
+
+복붙 후 저장.
+
 <br>
 
 ---
