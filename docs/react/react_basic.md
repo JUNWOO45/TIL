@@ -91,3 +91,45 @@ JSX에 이렇게 작성하면 에러가 발생한다.
 ### class vs className
 
 헷갈리지말고, `className`으로 사용하자.
+
+<br>
+
+### Referencing JavaScript Variables
+
+컬리브레이스가 하나인게.. 앵귤러와 참 헷갈리다 -_-;;
+
+```typescript
+...
+
+const App = () => {
+  const buttonText = 'Click ME~!!';
+  
+  return (
+  	<h1>{ buttonText }</h1>
+  );
+}
+
+...
+```
+
+<br>
+
+이렇게도 가능하다.
+
+```typescript
+...
+const getButtonTxt = () => 'custom button txt!';
+
+const App = () => {
+  const buttonText = 'Click ME~!!';
+  
+  return (
+  	<h1>{ getButtonTxt() }</h1>
+  );
+}
+
+...
+```
+
+<br>
+
