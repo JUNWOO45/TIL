@@ -19,6 +19,16 @@
 
 - 왼쪽 상단: 잠금화면
 
+### 환경설정 > Dock
+
+- 자동으로 Dock 가리기와 보기
+- Dock 나타나는 애니메이션 삭제하여 반응성 향상
+  터미널 열고 아래 명령어 실행
+
+```
+defaults write com.apple.dock autohide -bool true && defaults write com.apple.dock autohide-delay -float 0 && defaults write com.apple.dock autohide-time-modifier -float 0 && killall Dock
+```
+
 
 
 ## iTerm2
