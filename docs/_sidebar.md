@@ -162,6 +162,7 @@
 - 📂**React**
 
   - [React basic](/react/react_basic.md)
+  - [React Lifecycle](/react/lifecycle.md)
 
 - 📂**Vue**
 
