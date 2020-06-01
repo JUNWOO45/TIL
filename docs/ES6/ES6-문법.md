@@ -143,6 +143,31 @@ actions: {
    commit('addProducts');	// addProducts has been committed
    ```
 
+---
+
+```typescript
+const metadata = {
+    title: 'legendary book',
+    author: 'parkjunwoo',
+    translations: [
+        {
+            title: '전설의 책',
+            language: 'korean',
+            author: '박준우'
+        }
+    ]
+}
+
+const { 
+  title: englishTitle,
+  translations: [{
+    title: koreanTitle
+  }]
+} = metadata;
+
+console.log(englishTitle, koreanTitle);	//'legendary book' '전설의 책'
+```
+
 
 
 <hr>
