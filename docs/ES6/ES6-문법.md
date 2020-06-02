@@ -146,7 +146,7 @@ actions: {
 ---
 
 ```typescript
-const metadata = {
+ const metadata = {
     title: 'legendary book',
     author: 'parkjunwoo',
     translations: [
