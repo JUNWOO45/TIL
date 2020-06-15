@@ -1,6 +1,6 @@
 # 개발 환경 설정
 
-## Mac
+##  #Mac
 
 ### 환경설정 > 트랙패드
 
@@ -31,7 +31,7 @@ defaults write com.apple.dock autohide -bool true && defaults write com.apple.do
 
 
 
-## iTerm2
+##  #iTerm2
 
 ### 1-0 설치
 
@@ -95,6 +95,16 @@ prompt_context() {
 
 ---
 
+### -iTerm2 부르기
+
+```
+Preference -> Keys -> Hotkey
+```
+
+
+
+---
+
 ### - command + 좌우화살표 / option + 좌우화살표로 단어 사이 옮겨다니기
 
 ```
@@ -123,7 +133,7 @@ Reference: https://fernando.kr/15?category=790197
 
 ---
 
-## Git
+##  #Git
 
 ### - 커밋 메세지 템플릿 
 
@@ -189,7 +199,7 @@ Reference
 
 ---
 
-## VSCode
+##  #VSCode
 
 ### code . 적용
 
