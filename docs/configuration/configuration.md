@@ -207,5 +207,55 @@ Reference
 Shift + Command +  P and type `shell command`
 ```
 
+<br>
 
+### 단축키로 선택된 디렉토리에 새 파일 생성
+
+새 파일은 `command` + `n` 단축키로 생성할 수 있다.
+
+하지만 내가 선택한 워킹 디렉토리에 생성되지않아 매우 불편하다.
+
+keybinding.json을 수정하여 디폴트 커맨드를 수정해줄 수 있다.
+
+1. `shift` + `command` + `p` 를 누른뒤 `key` 를 검색해준다.
+2. Keyboard shortcut을 선택해준다.
+3. 우측 keyboardbinding.json을 눌러준다.
+
+![image](../pic/vscode_keyboard1.png)
+
+4. JSON형식에 맞춰 덮어씌워준다.
+
+```
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "cmd+n",
+    "command": "explorer.newFile"
+  }
+]
+```
+
+5. 이제 현재 활성화된 워킹 디렉토리에 파일이 생성된다.
+
+<br>
+
+---
+
+### 항상 새 탭으로 파일 열기
+
+새로운 파일을 열면 기존 탭에서 열리고 보고있던 파일은 사라져버린다. 
+
+매우 행복해진다..(대체 왜 이게 디폴트일까?)
+
+1. `shift` + `command` + `p` 를 누른 뒤, `settings` 를 검색해준다.
+2. `Open settings` 를 열어주자. 
+3. JSON 파일이 나온다. 옵션을 추가해주자.
+
+```
+{
+    "workbench.editor.enablePreview": false
+}
+```
+
+4. 편-안
 

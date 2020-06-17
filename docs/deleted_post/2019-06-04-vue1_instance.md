@@ -5,7 +5,7 @@ tags: [vue.js]
 comments: true
 ---
 
-모든 Vue앱은 Vue함수로 새로운 뷰 인스턴스를 만드는 것부터 시작합니다.
+Vue앱은 Vue함수로 새로운 뷰 인스턴스를 만드는 것부터 시작합니다.
 
 ```
 var vm = new Vue({
