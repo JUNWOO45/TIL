@@ -259,7 +259,9 @@
   - **Vue**
     - [vue-cli와 vuetify설치할 때 문제](/troubleshoot/vuetify설치.md)
 
-  
+
+- 📐**Test**
+  - [Jasmine](/test/jasmine.md)
 
 - 📂**ETC**
   
@@ -277,5 +279,4 @@
   - [반응형 웹](/etc/반응형웹.md)
   - [인프라](/etc/인프라.md "인프라")
   - [gcloud deploy](/etc/gcloud_deploy.md "gcloud deploy")
-  
 - [**📌개발환경설정**](/configuration/configuration.md)
