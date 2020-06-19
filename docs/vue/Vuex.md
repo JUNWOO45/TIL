@@ -23,9 +23,9 @@
 
 - 알아갈 것
 
-  - state: 여러 컴포넌트에 공유되는 데이터 data
+  - state: 여러 컴포넌트에 공유되는 데이터 `data`
 
-    ```
+    ```javascript
     //Vue
     data: function() {
     	message: 'hi'
@@ -51,9 +51,9 @@
 
     
 
-  - getters: 연산된 state값에 접근하는 속성 computed
+  - getters: 연산된 state값에 접근하는 속성 `computed`
 
-    ```
+    ```javascript
     //store.js
     
     state: {
@@ -80,7 +80,7 @@
 
     
 
-  - mutations: state값을 변경하는 **유일한 방법** 입니다. methods
+  - mutations: **state**값을 변경하는 **유일한 방법** 입니다. `methods`
 
     commit()으로 동작시킬 수 있습니다.
 
