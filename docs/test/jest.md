@@ -148,3 +148,7 @@ test.skip('이 함수는 스킵됩니다!', () => {
 });
 ```
 
+<br>
+
+### 그 외 [matchers](https://jestjs.io/docs/en/using-matchers)
+

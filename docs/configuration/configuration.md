@@ -259,3 +259,39 @@ keybinding.json을 수정하여 디폴트 커맨드를 수정해줄 수 있다.
 
 4. 편-안
 
+<br>
+
+## #Chrome Extension
+
+### vimium
+
+```
+gu: 상위 경로 url로 이동한다
+
+현재 url이 https://junwoo45.github.io/archive/2020-03-26-hoisting 이라면
+https://junwoo45.github.io/archive 로 이동한다.
+
+gU: 최상위 경로 url로 이동한다.
+현재 url이 https://junwoo45.github.io/archive/2020-03-26-hoisting 이라면
+https://junwoo45.github.io로 이동한다.
+
+
+스크롤
+gg: 페이지 최상단으로 스크롤
+G: 페이지 최하단으로 스크롤
+u: 반페이지 만큼 위로 스크롤
+d: 반페이지 만큼 아래로 스크롤
+
+r: 새로고침
+H: 뒤로가기
+L: 앞으로가기
+
+탭
+T: 열려있는 탭 검색
+J: 탭 왼쪽으로 이동
+K: 탭 오른쪽으로 이동
+g0: 첫번째 탭으로 이동
+g$: 마지막 탭으로 이동
+x: 탭 닫기
+```
+
