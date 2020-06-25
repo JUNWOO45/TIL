@@ -263,7 +263,8 @@
 
 - 📐**Test**
   - [Jasmine](/test/jasmine.md)
-
+- [jest](/test/jest.md)
+  
 - 📂**ETC**
   
   - [ESLint와Prettier](/etc/ESLint와Prettier.md)
