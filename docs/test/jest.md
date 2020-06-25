@@ -60,7 +60,7 @@ $ npm test -- --coverage
 $ jest --coverage
 ```
 
-![jest1](/Users/ns/Documents/works/fe-study/parkjunwoo/pic/jest1.png)
+![jest1](../pic/jest1.png)
 
 
 
