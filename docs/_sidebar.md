@@ -266,6 +266,7 @@
 
 - 📂**ETC**
   
+  - [ESLint와Prettier](/etc/ESLint와Prettier.md)
   - [SPA와 SSR](/etc/SPA와SSR.md)
   - [트랜스파일과 컴파일이란](/etc/transpile_and_compile.md)
   - [브라우저는 어떻게 동작하는가](/etc/브라우저는어떻게동작하는가.md "브라우저는 어떻게 동작하는가")
