@@ -131,9 +131,13 @@
   - [옵저버블](/RxJS/observable.md)
   - [옵저버블 생성함수](/RxJS/observable_creation.md)
 
+- 📂**성능**
+
+
+  - [리플로우](/performance/리플로우.md)
+
 - 📂**Javascript**
 
-  - [리플로우](/javascript/리플로우.md)
   - [이터레이터와 제너레이터2](/javascript/이터레이터와제너레이터2.md)
   - [클로져](/javascript/클로져.md)
   - [이벤트 위임](/javascript/이벤트위임.md)
@@ -265,8 +269,9 @@
 
 
 - 📐**Test**
-  - [Jasmine](/test/jasmine.md)
-- [jest](/test/jest.md)
+  
+- [Jasmine](/test/jasmine.md)
+  - [jest](/test/jest.md)
   
 - 📂**ETC**
   
@@ -285,4 +290,7 @@
   - [반응형 웹](/etc/반응형웹.md)
   - [인프라](/etc/인프라.md "인프라")
   - [gcloud deploy](/etc/gcloud_deploy.md "gcloud deploy")
+  
+  
+  
 - [**📌개발환경설정**](/configuration/configuration.md)
