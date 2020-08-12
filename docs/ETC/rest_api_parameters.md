@@ -57,3 +57,10 @@
 
 
 
+---
+
+### Reference
+
+- https://idratherbewriting.com/learnapidoc/docapis_doc_parameters.html#header_parameters
+- https://yuda.dev/250
+
