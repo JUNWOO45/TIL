@@ -289,6 +289,7 @@
   
 - 📂**ETC**
   
+  - [나중에 정리할 github pages](/etc/github_pages.md)
   - [ESLint와Prettier](/etc/ESLint와Prettier.md)
   - [SPA와 SSR](/etc/SPA와SSR.md)
   - [트랜스파일과 컴파일이란](/etc/transpile_and_compile.md)
