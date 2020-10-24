@@ -130,6 +130,7 @@
 
 - 📂**TypeScript**
 
+  - [Utils](/typescript/utils.md)
   - [TypeScript Compiler](/typescript/tsc_compiler.md)
   - [Types](/typescript/types.md)
   - [Classes](/typescript/classes.md)
