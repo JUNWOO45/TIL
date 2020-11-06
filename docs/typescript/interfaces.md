@@ -130,7 +130,26 @@ p1.x = 5;
 
 
 
+## 함수 인터페이스
 
+함수 또한 인터페이스로 정의가능하다.
+
+```typescript
+interface SumFunc {
+  (a: number, b: number): number;
+}
+
+const sum: SumFunc = (a: number, b: number): number => a + b;
+```
+
+
+
+
+
+## Types와 뭐가 다른거야?
+
+- types는 확장 불가능/ interface 는 확장 가능
+- 그러면 types는 왜 있는 걸까🤔..
 
 
 
