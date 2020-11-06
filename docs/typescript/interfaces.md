@@ -150,6 +150,7 @@ const sum: SumFunc = (a: number, b: number): number => a + b;
 
 - types는 확장 불가능/ interface 는 확장 가능
 - 그러면 types는 왜 있는 걸까🤔..
+  - 참고: https://joshua1988.github.io/ts/guide/type-alias.html#%ED%83%80%EC%9E%85-%EB%B3%84%EC%B9%AD-type-aliases
 
 
 
