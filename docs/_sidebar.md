@@ -139,6 +139,7 @@
 
 - 📂**TypeScript**
 
+  - [Nullable Types](/typescript/NullableTypes.md)
   - [Utils](/typescript/utils.md)
   - [TypeScript Compiler](/typescript/tsc_compiler.md)
   - [Types](/typescript/types.md)
