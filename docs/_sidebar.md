@@ -306,6 +306,7 @@
   
 - 📂**ETC**
   
+  - [vim 단축키](/etc/vim.md)
   - [나중에 정리할 github pages](/etc/github_pages.md)
   - [ESLint와Prettier](/etc/ESLint와Prettier.md)
   - [SPA와 SSR](/etc/SPA와SSR.md)
