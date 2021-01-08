@@ -306,6 +306,7 @@
   
 - 📂**ETC**
   
+  - [CDN](/etc/cdn.md)
   - [hosts파일이란](/etc/hosts.md)
   - [vim 단축키](/etc/vim.md)
   - [나중에 정리할 github pages](/etc/github_pages.md)
