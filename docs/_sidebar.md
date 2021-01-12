@@ -273,7 +273,7 @@
 
 - 📂**HTTP**
 
-  - [HTTP 정리](/ETC/http.md)
+  - [인터넷 네트워크 기본 정리](/ETC/http_fundamental.md)
   - [CORS](/javascript/CORS.md "cors란")
   - [RESTful](/javascript/RESTful.md "restful이란")
 
