@@ -1,5 +1,6 @@
 - 📝**TIL2021**
   
+  - [0118-0124](/til21/0118-0124.md)
   - [0111-0117](/til21/0111-0117.md)
   - [0104-0110](/til21/0104-0110.md)
   
@@ -275,6 +276,7 @@
 - 📂**HTTP**
 
   - [HTTP 기본](/ETC/http_basic.md)
+  - [HTTP 메소드](/ETC/http_method.md)
   - [인터넷 네트워크 기본 정리](/ETC/network_fundamental.md)
   - [CORS](/javascript/CORS.md "cors란")
   - [RESTful](/javascript/RESTful.md "restful이란")
