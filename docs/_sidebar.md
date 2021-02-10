@@ -277,14 +277,13 @@
 
 - 📂**HTTP**
 
+  - [인터넷 네트워크 기본 정리](/ETC/network_fundamental.md)
   - [HTTP 기본](/ETC/http_basic.md)
   - [HTTP 메소드](/ETC/http_method.md)
-  - [인터넷 네트워크 기본 정리](/ETC/network_fundamental.md)
-  - [CORS](/javascript/CORS.md "cors란")
-  - [RESTful](/javascript/RESTful.md "restful이란")
-
+  - [HTTP 상태코드](/ETC/http_status_code.md)
   
 
+  
 - 📂**Python**
 
   - [파이썬 기초](/Python/python_basic.md "파이썬 기초")
@@ -332,6 +331,8 @@
   - [반응형 웹](/etc/반응형웹.md)
   - [인프라](/etc/인프라.md "인프라")
   - [gcloud deploy](/etc/gcloud_deploy.md "gcloud deploy")
+  - [CORS](/javascript/CORS.md "cors란")
+  - [RESTful](/javascript/RESTful.md "restful이란")
   
   
   
