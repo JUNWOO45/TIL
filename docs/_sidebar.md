@@ -281,9 +281,10 @@
   - [HTTP 기본](/ETC/http_basic.md)
   - [HTTP 메소드](/ETC/http_method.md)
   - [HTTP 상태코드](/ETC/http_status_code.md)
-  
+  - [HTTP 헤더](/ETC/http_header.md)
 
   
+
 - 📂**Python**
 
   - [파이썬 기초](/Python/python_basic.md "파이썬 기초")
