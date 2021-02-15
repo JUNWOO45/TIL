@@ -74,3 +74,25 @@ Accept-Language: ko-KR;ko;q=0.9,en-US;q=0.8;en:q=0.7
 >
 > en;q=0.7 -> 4순위
 
+
+
+## 3. 전송 방식
+
+- 단순 전송
+
+![http14](../pic/http14.png)
+
+- 압축 전송
+
+![http15](../pic/http15.png)
+
+- 분할 전송
+  - 나눠서 전송한다.
+
+![http16](../pic/http16.png)
+
+- 범위 전송
+  - range를 정해서 요만큼만 전송한다.
+
+![http17](../pic/http17.png)
+
