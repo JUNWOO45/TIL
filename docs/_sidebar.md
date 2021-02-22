@@ -283,7 +283,8 @@
   - [HTTP 기본](/ETC/http_basic.md)
   - [HTTP 메소드](/ETC/http_method.md)
   - [HTTP 상태코드](/ETC/http_status_code.md)
-  - [HTTP 헤더](/ETC/http_header.md)
+  - [HTTP 헤더1](/ETC/http_header.md)
+  - [HTTP 헤더2](/ETC/http_header2.md)
 
   
 
