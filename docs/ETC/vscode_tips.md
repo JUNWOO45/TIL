@@ -90,5 +90,6 @@ Shift + Option + 마우스 드래그
 5. Bracket Pair colorizer V2 
 6. Easy less : less to css compiler
 7. gitLens: 엄청 편리하고 신박함.
+8. CodeTour: 코드리뷰, 복잡한 비즈니스로직에 대한 흐름을 설명해놓을때 아주 유용할 것 같다. 
 ```
 
