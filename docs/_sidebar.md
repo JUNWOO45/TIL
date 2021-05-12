@@ -287,6 +287,7 @@
 
 - 📂**HTTP**
 
+  - [웹 브라우저 요청 흐름](/etc/browser_request_flow.md)
   - [인터넷 네트워크 기본 정리](/ETC/network_fundamental.md)
   - [HTTP 기본](/ETC/http_basic.md)
   - [HTTP 메소드](/ETC/http_method.md)
