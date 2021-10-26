@@ -1,6 +1,6 @@
 # 개발 환경 설정
 
-##  #Mac
+## #Mac
 
 ### 환경설정 > 트랙패드
 
@@ -8,8 +8,6 @@
 - 추가 제스처 네 손가락 설정
 
 ### 환경설정 > 손쉬운 사용 > 포인터 제어기 > 트랙패드 옵션 > 드래그 활성화 "세 손가락으로"
-
-
 
 ### 환경설정 > 디스플레이 > 정렬
 
@@ -29,9 +27,7 @@
 defaults write com.apple.dock autohide -bool true && defaults write com.apple.dock autohide-delay -float 0 && defaults write com.apple.dock autohide-time-modifier -float 0 && killall Dock
 ```
 
-
-
-##  #iTerm2
+## #iTerm2
 
 ### 1-0 설치
 
@@ -101,8 +97,6 @@ prompt_context() {
 Preference -> Keys -> Hotkey
 ```
 
-
-
 ---
 
 ### - command + 좌우화살표 / option + 좌우화살표로 단어 사이 옮겨다니기
@@ -110,8 +104,6 @@ Preference -> Keys -> Hotkey
 ```
 iTerm2 -> Preferences -> Profiles -> Keys -> Presets.. -> Natural text editing
 ```
-
-
 
 ### - zsh 조금 더 이쁘게 꾸미기
 
@@ -127,17 +119,39 @@ vim ~/.zshrc
 prompt_context() { # Custom (Random emoji) emojis=("⚡️" "🔥" "🇰" "👑" "😎" "🐸" "🐵"  "🌈" "🍻" "🚀" "💡" "🎉" "🔑" "🚦" "🌙") RAND_EMOJI_N=$(( $RANDOM % ${#emojis[@]} + 1)) prompt_segment black default "{하고싶은이름} ${emojis[$RAND_EMOJI_N]} " }
 ```
 
-
-
 Reference: https://fernando.kr/15?category=790197
 
 ---
 
-##  #Git
+## #Git
 
-### - 커밋 메세지 템플릿 
+### alias
 
+1.
 
+```
+open ~/.gitconfig
+```
+
+2.
+
+```
+[alias]
+  lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+        lg1a = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%x09%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+        lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+        lg3 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset)%C(bold yellow)%d%C(reset) %C(white)%s%C(reset) %C(bold green)(%ar)%C(reset) %C(dim white)- %an%C(reset)' --all
+        lg4 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset)%C(bold yellow)%d%C(reset) %C(white)%s%C(reset) %C(bold green)(%ar)%C(reset) %C(dim white)- %an%C(reset)'
+        lg = !"git lg4"
+        lga = !"git lg3"
+        st = status
+        co = checkout
+        nb = checkout -b
+        com = checkout master
+        po = push origin
+```
+
+### - 커밋 메세지 템플릿
 
 우선, 가이드대로 `~/.gitmessage.txt` 파일을 만들어주고, 에디터로 진입.
 
@@ -195,11 +209,9 @@ Reference
 
 - [https://git-scm.com/book/ko/v2/Git%EB%A7%9E%EC%B6%A4-Git-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0](https://git-scm.com/book/ko/v2/Git맞춤-Git-설정하기)
 
-
-
 ---
 
-##  #VSCode
+## #VSCode
 
 ### code . 적용
 
@@ -243,12 +255,12 @@ keybinding.json을 수정하여 디폴트 커맨드를 수정해줄 수 있다.
 
 ### 항상 새 탭으로 파일 열기
 
-새로운 파일을 열면 기존 탭에서 열리고 보고있던 파일은 사라져버린다. 
+새로운 파일을 열면 기존 탭에서 열리고 보고있던 파일은 사라져버린다.
 
 매우 행복해진다..(대체 왜 이게 디폴트일까?)
 
 1. `shift` + `command` + `p` 를 누른 뒤, `settings` 를 검색해준다.
-2. `Open settings` 를 열어주자. 
+2. `Open settings` 를 열어주자.
 3. JSON 파일이 나온다. 옵션을 추가해주자.
 
 ```
@@ -294,4 +306,3 @@ g0: 첫번째 탭으로 이동
 g$: 마지막 탭으로 이동
 x: 탭 닫기
 ```
-
