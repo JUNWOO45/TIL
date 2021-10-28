@@ -27,6 +27,15 @@
 defaults write com.apple.dock autohide -bool true && defaults write com.apple.dock autohide-delay -float 0 && defaults write com.apple.dock autohide-time-modifier -float 0 && killall Dock
 ```
 
+
+
+### 스크린샷 단축키 클립보드로 복사하도록 변경
+
+- 시스템 환경설정 > 키보드 > 단축키 > 스크린샷
+  - 단축키 변경
+
+
+
 ## #iTerm2
 
 ### 1-0 설치
